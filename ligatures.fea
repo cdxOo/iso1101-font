@@ -1,0 +1,14 @@
+lookup BoxingLigatures {
+    lookupflag 0;
+        sub \bar \bar \bracketleft by \BoxL;
+        sub \bracketright \bar \bar by \BoxR;
+} BoxingLigatures;
+
+feature liga {
+    script DFLT;
+        language dflt;
+            lookup BoxingLigatures;
+    script latn;
+        language dflt;
+            lookup BoxingLigatures;
+} liga;

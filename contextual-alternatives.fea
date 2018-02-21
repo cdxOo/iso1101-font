@@ -1,0 +1,21 @@
+@boxingglyph = [ \BoxL \A.Boxed \B.Boxed ];
+@unboxingglyph = [ \BoxR ];
+@boxedvariant = [ \A.Boxed \B.Boxed ];
+@defaultvariant = [ \A \B ];
+
+lookup BoxingContextual {
+    lookupflag 0;
+        sub @boxingglyph @defaultvariant' by @boxedvariant;
+} BoxingContextual;
+
+feature calt {
+    script DFLT;
+        language dflt;
+            lookup BoxingContextual;
+    script latn;
+        language dflt;
+            lookup BoxingContextual;
+} calt;
+
+
+
