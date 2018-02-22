@@ -2,6 +2,7 @@ import sys
 import fontforge
 import psMat
 from pprint import pprint
+from xml.dom import minidom # for svg parsing
 import inspect
 
 def copy_glyphs_in_place(src, dst, glyphs):
@@ -22,10 +23,33 @@ def copy_glyphs_in_place(src, dst, glyphs):
 def import_glyph_from_eps (font, name, width):
 
     glyph = font.createChar(-1, name)
-    glyph.importOutlines('glyphs/' + name + '.eps')
+    glyph.importOutlines('glyphs/boxing/' + name + '.eps')
     glyph.width = width
 
     return
+
+def import_symbol_from_svg (font, name, codepoint = None, width = None):
+
+    path = 'glyphs/symbols/' + name + '.svg'
+    glyph = font.createChar(-1, name)
+    glyph.importOutlines(path)
+
+    if width != None:
+        glyph.width = width
+    else:
+        svg = minidom.parse(path);
+        glyph.width = float(svg.documentElement.attributes['width'].value)
+        width = glyph.width # store width for further use
+        svg.unlink() # free memory
+
+    if codepoint != None:
+        uni = font.createMappedChar(codepoint)
+        uni.addReference(name)
+        uni.width = width
+
+
+    return
+
 
 
 latopath = './Lato2OFL/Lato-Regular.ttf'
@@ -55,26 +79,26 @@ lato_glyphs = [
 for glyphrange in lato_glyphs:
     copy_glyphs_in_place(lato, iso, glyphrange)
 
-stix_glyphs = [
-    'uni2220', # angle 
-    'uni2300', # diameter
-    'uni2312', # arc
-    'uni2313', # segment
-    'uni2316', # position
-    'uni232d', # cylindricity
-    'uni23e4', # straightness
-    'uni23e5', # flatness
-    'uni27c2', # perpendicularity
+symbols = {
+    'angularity':       'uni2220', # angle 
+    'circular_runout':  'uni2197', # north east arrow
+    'circularity':      'uni25cb', # circularity
+    'concentricity':    'uni25ce', # bullseye
+    'diameter':         'uni2300', # diameter
+    'flatness':         'uni23e5', # flatness
+    'line_profile':     'uni2312', # arc
+    'parallelism':      'uni2afd', # double solidous operator
+    'perpendicularity': 'uni27c2', # perpendicularity
+    'position':         'uni2316', # position
+    'straightness':     'uni23e4', # straightness
+    'surface_profile':  'uni2313', # segment
+    'symmetry':         'uni232f', # symmetry
+    'total_runout':     'uni21D7', # north east double arrow
+    'cylindricity':     'uni232d', # cylindricity
+}
 
-    
-    'uni25cb', # circularity
-    #'uni29be', # concentricity (circled white bullet)
-    'uni25ce', # concentricity (bullseye)
-    'uni2afd', # parrallelity (double solidous operator)
-]
-
-for glyphrange in stix_glyphs:
-    copy_glyphs_in_place(stix, iso, glyphrange)
+for name, codepoint in symbols.items():
+    import_symbol_from_svg(iso, name, codepoint)
 
 #pen = iso['B'].glyphPen()
 #pen.addComponent('uni203E')
