@@ -11,7 +11,9 @@
    viewBox="0 -792 823 2000"
    id="svg19371"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="BoxL_ISO1101Font.svg">
+   sodipodi:docname="square_box_left.svg"
+   width="823"
+   height="2000">
   <metadata
      id="metadata19381">
     <rdf:RDF>
@@ -20,6 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -47,18 +50,19 @@
      inkscape:snap-center="true"
      inkscape:snap-page="true"
      inkscape:zoom="0.118"
-     inkscape:cx="411.5"
+     inkscape:cx="-3495.2796"
      inkscape:cy="1000"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg19371" />
   <g
-     transform="matrix(1 0 0 -1 0 1610)"
+     transform="matrix(1,0,0,-1,0,1610)"
      id="g19373">
     <path
-       fill="currentColor"
-       d="M823 -792h-823v3018l823 2v-134h-689v-2747l689 -4v-135z"
-       id="path19375" />
+       d="m 823,-792 -823,0 0,3018 823,2 0,-134 -689,0 0,-2747 689,-4 0,-135 z"
+       id="path19375"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
   </g>
 </svg>

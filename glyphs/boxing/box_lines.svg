@@ -1,9 +1,60 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-200 -792 1300 2000">
-  <g transform="matrix(1 0 0 -1 0 1610)">
-   <path fill="currentColor"
-d="M-188 -657h1688v-135h-1688v135zM-200 2228h1688v-134h-1688v134z" />
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="-200 -792 1300 2000"
+   id="svg26351"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="box_lines.svg"
+   width="1300"
+   height="2000">
+  <metadata
+     id="metadata26361">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs26359" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     id="namedview26357"
+     showgrid="false"
+     inkscape:zoom="0.118"
+     inkscape:cx="650"
+     inkscape:cy="1000"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg26351" />
+  <g
+     transform="matrix(1,0,0,-1,0,1610)"
+     id="g26353">
+    <path
+       d="m -188,-657 1688,0 0,-135 -1688,0 0,135 z m -12,2885 1688,0 0,-134 -1688,0 0,134 z"
+       id="path26355"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
   </g>
-
 </svg>
