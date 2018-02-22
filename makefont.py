@@ -131,7 +131,7 @@ modifier_outline_glyphs = [
 # import modfier outline glyphs
 # and create variants that have additional box outlines
 for name in modifier_outline_glyphs:
-    import_glyph_from_svg(iso, 'glyphs/boxing/', name, codepoint)
+    import_glyph_from_svg(iso, 'glyphs/boxing/', name)
 
 # we need small caps to make the letters fit the modifier boxes properly
 # unfortunately they are scattered accross the unicode table
@@ -148,10 +148,18 @@ for name, codepoint in small_caps.items():
     lato.copy()
     iso.paste()
 
+    # make sure the letter is vertically centered within the modifier outlines
+    sc.transform(psMat.translate(0, 210)) # we measured that
+
+    circle_width = iso['modifier_circle'].width
     # create circled variant
     circled = iso.createChar(-1, name + '.modcircled')
-    circled.addReference(sc_name)
+    circled.addReference(
+        sc_name,
+        psMat.translate((circle_width - sc.width) / 2, 0) 
+    )
     circled.addReference('modifier_circle')
+    circled.width = circle_width
 
     # create inline variant
     create_outlined_variant(iso, sc, 'modifier_lines', 'modinline')
@@ -193,7 +201,7 @@ box_outline_glyphs = [
 ]
 
 for name in box_outline_glyphs:
-    import_glyph_from_svg(iso, 'glyphs/boxing/', name, codepoint)
+    import_glyph_from_svg(iso, 'glyphs/boxing/', name)
 
 # create glyphs width box outlines
 for glyph in glyphs_that_need_boxing:
