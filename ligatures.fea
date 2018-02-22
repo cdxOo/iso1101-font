@@ -1,7 +1,7 @@
 lookup BoxingLigatures {
     lookupflag 0;
-        sub \bar \bar \bracketleft by \BoxL;
-        sub \bracketright \bar \bar by \BoxR;
+        sub \bar \bar \bracketleft by \square_box_left;
+        sub \bracketright \bar \bar by \square_box_right;
 } BoxingLigatures;
 
 lookup SymbolLigatures {

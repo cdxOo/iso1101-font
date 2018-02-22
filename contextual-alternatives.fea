@@ -1,6 +1,6 @@
-@boxingglyph = [ \BoxL \A.Boxed \B.Boxed ];
-@unboxingglyph = [ \BoxR ];
-@boxedvariant = [ \A.Boxed \B.Boxed ];
+@boxingglyph = [ \square_box_left \A.boxed \B.boxed ];
+@unboxingglyph = [ \square_box_right ];
+@boxedvariant = [ \A.boxed \B.boxed ];
 @defaultvariant = [ \A \B ];
 
 lookup BoxingContextual {

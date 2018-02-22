@@ -28,9 +28,9 @@ def import_glyph_from_eps (font, name, width):
 
     return
 
-def import_symbol_from_svg (font, name, codepoint = None, width = None):
+def import_glyph_from_svg (font, basedir, name, codepoint = None, width = None):
 
-    path = 'glyphs/symbols/' + name + '.svg'
+    path = basedir + name + '.svg'
     glyph = font.createChar(-1, name)
     glyph.importOutlines(path)
 
@@ -50,27 +50,38 @@ def import_symbol_from_svg (font, name, codepoint = None, width = None):
 
     return
 
+def create_outlined_variant (font, glyph, lines_name, suffix):
+    original_name = glyph.glyphname
+    outlined_name = glyph.glyphname + '.' + suffix
+
+    outlined = iso.createChar(-1, outlined_name)
+
+    # FIXME: we actually need to center the outline after scaling
+    # since the scaling seems to be not from the center
+    outlined.addReference(
+        lines_name,
+        psMat.scale(glyph.width / font[lines_name].width, 1)
+    )
+    outlined.addReference(original_name)
+
+    outlined.width = glyph.width # reset width
+    return;
 
 
 latopath = './Lato2OFL/Lato-Regular.ttf'
-stixpath = './STIXv2.0.0/STIX2Math.otf'
-
 isopath = './iso1101font.ttf'
 
 iso = fontforge.font()
 lato = fontforge.open(latopath)
-stix = fontforge.open(stixpath)
 
 iso.ascent = lato.ascent
 iso.descent = lato.descent
 iso.em = lato.em
 iso.encoding = 'UnicodeFull'
 
-stix.em = 2000 # this will scale the font to that size
-               # so we can copy the gyphs at the right size
-
 #pprint(inspect.getmembers(stix))
 
+#add required lato glyphs
 lato_glyphs = [
     ('!', '~'),
     'uni0020', # space
@@ -79,6 +90,7 @@ lato_glyphs = [
 for glyphrange in lato_glyphs:
     copy_glyphs_in_place(lato, iso, glyphrange)
 
+# add the symbol glyphs from svg files
 symbols = {
     'angularity':       'uni2220', # angle 
     'circular_runout':  'uni2197', # north east arrow
@@ -98,14 +110,57 @@ symbols = {
     'cylindricity':     'uni232d', # cylindricity
 }
 
+for name, codepoint in symbols.items():
+    import_glyph_from_svg(iso, 'glyphs/symbols/', name, codepoint)
+
+
+# after inserting the symbols we store the currently
+# available glyphs for futher use
+iso.selection.all()
+default_glyphs = list(iso.selection.byGlyphs);
+
+# add modifier outline glyphs
+modifier_outline_glyphs = [
+    'modifier_lines',
+    'modifier_left',
+    'modifier_right',
+    
+    'modifier_circle',
+]
+
+# import modfier outline glyphs
+# and create variants that have additional box outlines
+for name in modifier_outline_glyphs:
+    import_glyph_from_svg(iso, 'glyphs/boxing/', name, codepoint)
+
 # we need small caps to make the letters fit the modifier boxes properly
 # unfortunately they are scattered accross the unicode table
 small_caps = {
     'A': 'uni1d00',
 }
 
-for name, codepoint in symbols.items():
-    import_symbol_from_svg(iso, name, codepoint)
+for name, codepoint in small_caps.items():
+    sc_name = name + '.sc'
+    sc = iso.createChar(-1, sc_name)
+    
+    lato.selection.select(codepoint)
+    iso.selection.select(sc_name)
+    lato.copy()
+    iso.paste()
+
+    # create circled variant
+    circled = iso.createChar(-1, name + '.modcircled')
+    circled.addReference(sc_name)
+    circled.addReference('modifier_circle')
+
+    # create inline variant
+    create_outlined_variant(iso, sc, 'modifier_lines', 'modinline')
+
+
+
+# storeing all the glyphs that need boxing for futher use
+iso.selection.all()
+glyphs_that_need_boxing = list(iso.selection.byGlyphs);
 
 # TODO: arrow assembly
 arrow_segments = [
@@ -122,40 +177,27 @@ arrow_segments = [
     'end'
 ]
 
-#pen = iso['B'].glyphPen()
-#pen.addComponent('uni203E')
-#iso['A'].draw(pen)
 
-#pen = None
+# import control glyphs from svg
+box_outline_glyphs = [
+    'box_lines',
+    'box_seperator',
 
+    'square_box_left',
+    'square_box_right',
+    'hex_box_left',
+    'hex_box_right',
+    'roof_box_left',
+    'roof_box_right',
+    'circle_box_left',
+]
 
-# all teh currently existing glyphs
-# that should have a boxed equivalent
-iso.selection.all()
-unboxed = list(iso.selection.byGlyphs);
+for name in box_outline_glyphs:
+    import_glyph_from_svg(iso, 'glyphs/boxing/', name, codepoint)
 
-eps_glyphs = {
-    'BoxL': 823,
-    'BoxR': 823,
-    'BoxLines': 1300
-}
-
-for name, width in eps_glyphs.items():
-    import_glyph_from_eps(iso, name, width)
-
-lineswidth = eps_glyphs['BoxLines']
-
-for glyph in unboxed:
-    original_name = glyph.glyphname
-    boxed_name = glyph.glyphname + '.Boxed'
-
-    iso.createChar(-1, boxed_name)
-    boxed = iso[boxed_name]
-
-    boxed.addReference('BoxLines', psMat.scale(glyph.width/lineswidth, 1))
-    boxed.addReference(original_name)
-
-    boxed.width = glyph.width
+# create glyphs width box outlines
+for glyph in glyphs_that_need_boxing:
+    create_outlined_variant(iso, glyph, 'box_lines', 'boxed')
     #boxed.left_side_bearing = glyph.left_side_bearing
     #boxed.right_side_bearing = glyph.right_side_bearing
 
