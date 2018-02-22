@@ -85,6 +85,7 @@ symbols = {
     'circularity':      'uni25cb', # circularity
     'concentricity':    'uni25ce', # bullseye
     'diameter':         'uni2300', # diameter
+    # FIXME we might want to enlarge the flattness svg again and fiddle around with left(right bearing
     'flatness':         'uni23e5', # flatness
     'line_profile':     'uni2312', # arc
     'parallelism':      'uni2afd', # double solidous operator
@@ -97,8 +98,29 @@ symbols = {
     'cylindricity':     'uni232d', # cylindricity
 }
 
+# we need small caps to make the letters fit the modifier boxes properly
+# unfortunately they are scattered accross the unicode table
+small_caps = {
+    'A': 'uni1d00',
+}
+
 for name, codepoint in symbols.items():
     import_symbol_from_svg(iso, name, codepoint)
+
+# TODO: arrow assembly
+arrow_segments = [
+    'start', # default start with zero degre angle
+    
+    'mid_none',
+    'mid_circle',
+    'mid_bullseye',
+
+    'start90_none',
+    'start90_circle',
+    'start90_bullseye',
+
+    'end'
+]
 
 #pen = iso['B'].glyphPen()
 #pen.addComponent('uni203E')
@@ -113,10 +135,6 @@ iso.selection.all()
 unboxed = list(iso.selection.byGlyphs);
 
 eps_glyphs = {
-    # 'Symmetry': 1000, # missing from stix for some reason
-    # 'SimpleRun': 1000, # doesnt exist in unicode
-    # 'FullRun': 1000, # doesnt exist in unicode
-
     'BoxL': 823,
     'BoxR': 823,
     'BoxLines': 1300
