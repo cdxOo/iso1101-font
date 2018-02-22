@@ -4,11 +4,18 @@ lookup BoxingLigatures {
         sub \bracketright \bar \bar by \BoxR;
 } BoxingLigatures;
 
+lookup SymbolLigatures {
+    lookupflag 0;
+        sub \underscore \underscore \colon \A \N \G \U \L \A \R \I \T \Y \colon \underscore \underscore by \angularity;
+} SymbolLigatures;
+
 feature liga {
     script DFLT;
         language dflt;
             lookup BoxingLigatures;
+            lookup SymbolLigatures;
     script latn;
         language dflt;
             lookup BoxingLigatures;
+            lookup SymbolLigatures;
 } liga;
