@@ -26,7 +26,7 @@ lookup ModCircledLigatures {
     lookupflag 0;
     {% for glyph in moddable_glyphs %}
         sub @modifier_initializer \{{ glyph }}{{ suffixes.small_caps }} \colon \parenright 
-            by \{{ glyph }}{{ suffixes.circled }};
+        by \{{ glyph }}{{ suffixes.small_caps}}{{ suffixes.modcircled }};
     {% endfor %}
 } ModCircledLigatures;
 
