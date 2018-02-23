@@ -11,7 +11,7 @@
    viewBox="0 -390 928.75201 2000"
    id="svg32527"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="X_sc.svg"
+   sodipodi:docname="X.sc.svg"
    width="928.75201"
    height="2000">
   <metadata
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -50,10 +50,10 @@
      inkscape:snap-midpoints="true"
      inkscape:snap-object-midpoints="true"
      inkscape:snap-page="true"
-     inkscape:zoom="0.6675088"
-     inkscape:cx="590"
-     inkscape:cy="495.17603"
-     inkscape:window-x="-8"
+     inkscape:zoom="0.1668772"
+     inkscape:cx="-1757.5219"
+     inkscape:cy="1013.6208"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg32527"
@@ -87,15 +87,6 @@
        orientation="0,1"
        id="guide34329" />
   </sodipodi:namedview>
-  <g
-     transform="matrix(1,0,0,-1,1990.2144,2147.8713)"
-     id="g33107">
-    <path
-       style="fill:currentColor"
-       inkscape:connector-curvature="0"
-       d="m 323,720 q 0,-125 34,-224 34,-99 97,-167.5 63,-68.5 152,-105 89,-36.5 199,-36.5 111,0 200,36.5 89,36.5 151.5,105 62.5,68.5 96,167.5 33.5,99 33.5,224 0,124 -33.5,223 -33.5,99 -96,168 -62.5,69 -151.5,106 -89,37 -200,37 -110,0 -199,-37 -89,-37 -152,-106 -63,-69 -97,-168 -34,-99 -34,-223 z m 1273,-1008 -192,0 q -43,0 -76,11.5 -33,11.5 -61,41.5 L 1037,18 Q 929,-15 805,-15 644,-15 511.5,40 379,95 284,192.5 189,290 137,425 85,560 85,720 q 0,160 52,295 52,135 147,233 95,98 227.5,153 132.5,55 293.5,55 162,0 294.5,-55 132.5,-55 227,-153 94.5,-98 146.5,-233 52,-135 52,-295 0,-99 -20,-188.5 -20,-89.5 -58,-167 -38,-77.5 -93,-142 Q 1299,158 1229,110 Z"
-       id="path33109" />
-  </g>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:45px;line-height:125%;font-family:Lato;-inkscape-font-specification:'Lato Light';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
