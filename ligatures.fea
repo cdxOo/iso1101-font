@@ -2,6 +2,9 @@ lookup BoxingLigatures {
     lookupflag 0;
         sub \bar \bar \bracketleft by \square_box_left;
         sub \bracketright \bar \bar by \square_box_right;
+
+        sub \parenleft \colon \A \colon \parenright by \A.modcircled;
+        sub \parenleft \colon by \modifier_left;
 } BoxingLigatures;
 
 lookup SymbolLigatures {
