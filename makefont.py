@@ -58,6 +58,7 @@ def create_outlined_variant (font, glyph, lines_name, suffix):
 
     # FIXME: we actually need to center the outline after scaling
     # since the scaling seems to be not from the center
+    # FIXME: mod lines are incorrectly set up for this
     outlined.addReference(
         lines_name,
         psMat.scale(glyph.width / font[lines_name].width, 1)
@@ -136,17 +137,45 @@ for name in modifier_outline_glyphs:
 # we need small caps to make the letters fit the modifier boxes properly
 # unfortunately they are scattered accross the unicode table
 small_caps = {
-    'A': 'uni1d00',
+    'A': 'uni1D00',
+    'B': 'uni0299',
+    'C': 'uni1D04',
+    'D': 'uni1D05',
+    'E': 'uni1D07',
+    'F': 'uniA730',
+    'G': 'uni0262',
+    'H': 'uni029C',
+    'I': 'uni026A',
+    'J': 'uni1D0A',
+    'K': 'uni1D0B',
+    'L': 'uni029F',
+    'M': 'uni1D0D',
+    'N': 'uni0274',
+    'O': 'uni1D0F',
+    'P': 'uni1D18',
+    'Q': None, # missing from unicode
+    'R': 'uni0280',
+    'S': 'uniA731',
+    'T': 'uni1D1B',
+    'U': 'uni1D1C',
+    'V': 'uni1D20',
+    'W': 'uni1D21',
+    'X': None, # missing from unicode
+    'Y': 'uni028F', 
+    'Z': 'uni1D22',
 }
 
 for name, codepoint in small_caps.items():
     sc_name = name + '.sc'
     sc = iso.createChar(-1, sc_name)
     
-    lato.selection.select(codepoint)
-    iso.selection.select(sc_name)
-    lato.copy()
-    iso.paste()
+    if codepoint != None:
+        lato.selection.select(codepoint)
+        iso.selection.select(sc_name)
+        lato.copy()
+        iso.paste()
+    else:
+        import_glyph_from_svg(iso, 'glyphs/small-caps/', name + '.sc')
 
     # make sure the letter is vertically centered within the modifier outlines
     sc.transform(psMat.translate(0, 210)) # we measured that
