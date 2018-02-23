@@ -7,8 +7,9 @@ lookup BoxingLigatures {
 
 lookup SymbolLigatures {
     lookupflag 0;
-    {% for sub in symbol_ligatures %}
-        sub {{ sub.sequence }} by {{ sub.replacement }}
+    {% for name in symbols %}
+        sub \underscore \underscore \colon {% for char in name %} \{{ char|upper }} {% endfor %} \colon \underscore \underscore
+            by \{{ name }};
     {% endfor %}
 } SymbolLigatures;
 
@@ -22,3 +23,7 @@ feature liga {
             lookup BoxingLigatures;
             lookup SymbolLigatures;
 } liga;
+
+
+
+

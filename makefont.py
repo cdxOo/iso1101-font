@@ -318,6 +318,7 @@ jinja_context = Literal(
     default_glyphs = generated.basic,
 
     modinline_glyphs = generated.modinline,
+    modcircled_glyphs = generated.modcircled,
     modifier_initializers = gm.modifier_initializers,
     
     box_initializers = gm.box_initializers,
@@ -327,7 +328,7 @@ jinja_context = Literal(
     boxed_modifier_initializers = generated.boxed_modifier_initializers,
     boxed_modinline_glyphs = generated.boxed_modinline,
 
-    small_caps = gm.small_caps.keys(),
+    moddable_glyphs = gm.small_caps.keys(),
     symbols = gm.symbols.keys(),
 
     suffixes = gm.suffixes,
@@ -345,8 +346,9 @@ with open('./build/iso1101-font.fea', 'w') as fh:
     fh.write(rendered)
 
 
-iso.mergeFeature('ligatures.fea')
-iso.mergeFeature('contextual-alternatives.fea')
+#iso.mergeFeature('ligatures.fea')
+#iso.mergeFeature('contextual-alternatives.fea')
+iso.mergeFeature('build/iso1101-font.fea')
 
 iso.fontname = 'ISO1101Font'
 

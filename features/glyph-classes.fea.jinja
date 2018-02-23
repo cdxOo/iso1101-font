@@ -8,7 +8,7 @@
     {% for glyph in boxed_glyphs %}
         \{{ glyph }}
     {% endfor %}
-]
+];
 
 @should_mod_next = [
     {% for glyph in modifier_initializers %}
@@ -17,7 +17,7 @@
     {% for glyph in modinline_glyphs %}
         \{{ glyph }}
     {% endfor %}
-]
+];
 
 @should_box_and_mod_next = [
     {% for glyph in boxed_modifier_initializers %}
@@ -26,12 +26,69 @@
     {% for glyph in boxed_modinline_glyphs %}
         \{{ glyph }}
     {% endfor %}
-]
+];
 
-@default_glyph = [{{ default_glyphs }}]
-@boxed_glyph = [{{ boxed_glyphs }}]
-@modifier_glyph = [{{ modifier_glyphs }}]
-@boxed_modifier_glyphs = [{{ boxed_modifier_glyphs }}]
+
+
+@default_glyph = [
+    {% for glyph in default_glyphs %}
+        \{{ glyph }}
+    {% endfor %}
+];
+
+@boxable_glyph = [
+    {% for glyph in default_glyphs %}
+        \{{ glyph }}
+    {% endfor %}
+    {% for glyph in modinline_glyphs %}
+        \{{ glyph }}
+    {% endfor %}
+    {% for glyph in modcircled_glyphs %}
+        \{{ glyph }}
+    {% endfor %}
+    {% for glyph in modifier_initializers %}
+        \{{ glyph }}
+    {% endfor %}
+];
+
+@boxed_glyph = [
+    {% for glyph in default_glyphs %}
+        \{{ glyph }}{{ suffixes.boxed }}
+    {% endfor %}
+    {% for glyph in modinline_glyphs %}
+        \{{ glyph }}{{ suffixes.boxed }}
+    {% endfor %}
+    {% for glyph in modcircled_glyphs %}
+        \{{ glyph }}{{ suffixes.boxed }}
+    {% endfor %}
+    {% for glyph in modifier_initializers %}
+        \{{ glyph }}{{ suffixes.boxed }}
+    {% endfor %}
+];
+
+@moddable_glyph = [
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}
+    {% endfor %}
+];
+
+@modinline_glyph = [
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}{{ suffixes.small_caps }}{{suffixes.modinline}}
+    {% endfor %}
+];
+
+@boxed_moddable_glyph = [
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}{{ suffixes.boxed }}
+    {% endfor %}
+];
+
+@boxed_modinline_glyph = [
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}{{ suffixes.small_caps }}{{suffixes.modinline}}{{ suffixes.boxed }}
+    {% endfor %}
+];
 
 
 

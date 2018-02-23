@@ -1,11 +1,12 @@
 lookup BoxContextual {
     lookupflag 0;
-        sub @should_box_next @default_glyph' by @boxed_glyph;
-} BoxgContextual;
+        sub @should_box_next @boxable_glyph' by @boxed_glyph;
+} BoxContextual;
 
 lookup ModifierContextual {
     lookupflag 0;
-        sub @should_mod_next @default_glyph' by @modifier_glyph;
+        sub @should_mod_next @moddable_glyph' by @modinline_glyph;
+        sub @should_box_and_mod_next @moddable_glyph' by @boxed_modinline_glyph;
 } ModifierContextual;
 
 feature calt {
