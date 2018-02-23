@@ -182,31 +182,33 @@ gm = Literal(
 
 # store generated/imported glyph names
 # will be used for feature file template
+
+
 generated = Literal(
     basic = None,
-    modinline = map(
+    modinline = list(map(
         lambda n: n + gm.suffixes.small_caps + gm.suffixes.modinline,
         gm.small_caps.keys()
-    ),
-    modcircled = map(
+    )),
+    modcircled = list(map(
         lambda n: n + gm.suffixes.small_caps + gm.suffixes.modcircled,
         gm.small_caps.keys()
-    ),
+    )),
 
     boxed = None,
     boxed_default = None,
-    boxed_modifier_initializers = map(
+    boxed_modifier_initializers = list(map(
         lambda n: n + gm.suffixes.boxed,
         gm.modifier_initializers
-    ),
-    boxed_modinline = map(
+    )),
+    boxed_modinline = list(map(
         lambda n: n + gm.suffixes.small_caps + gm.suffixes.modinline + gm.suffixes.boxed,
-        gm.small_caps
-    ),
-    boxed_modcircled = map(
+        gm.small_caps.keys()
+    )),
+    boxed_modcircled = list(map(
         lambda n: n + gm.suffixes.small_caps + gm.suffixes.modcircled + gm.suffixes.boxed,
-        gm.small_caps
-    ),
+        gm.small_caps.keys()
+    )),
 )
 
 for glyphrange in gm.lato:
@@ -282,18 +284,17 @@ for name in box_outlines:
 
 # create glyphs width box outlines
 glyphs_that_need_boxing = (
-    list(generated.basic)
-    + list(generated.modinline)
-    + list(generated.modcircled)
+    generated.basic
+    + generated.modinline
+    + generated.modcircled
     + gm.modifier_initializers
     + gm.modifier_other
 )
 for name in glyphs_that_need_boxing:
-    pprint(name)
     glyph = iso[name]
     create_outlined_variant(iso, glyph, 'box_lines', gm.suffixes.boxed)
 
-generated.boxed = glyphs_that_need_boxing
+generated.boxed = list(map(lambda n: n + gm.suffixes.boxed, glyphs_that_need_boxing))
     #boxed.left_side_bearing = glyph.left_side_bearing
     #boxed.right_side_bearing = glyph.right_side_bearing
 
