@@ -11,7 +11,7 @@
    viewBox="0 -792 1694.799 2000"
    id="svg19371"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="hint_box_right.svg"
+   sodipodi:docname="hex_box_right.svg"
    width="1694.799"
    height="2000">
   <metadata
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -50,7 +50,7 @@
      inkscape:snap-center="true"
      inkscape:snap-page="true"
      inkscape:zoom="0.1668772"
-     inkscape:cx="411.5"
+     inkscape:cx="-969.7552"
      inkscape:cy="1098.1455"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
@@ -111,7 +111,7 @@
   </sodipodi:namedview>
   <path
      style="fill:currentColor"
-     d="M 1694.7988,-618 873.52344,-616.00391 871.79883,-617 0,893 l 870.66016,1508.0293 1.13867,-0.6309 0,1.6016 822.99997,0 0,-139 -750.25388,0 -790.96875,-1370 795.01024,-1377 746.21239,0 z"
+     d="m 0,-618 821.27536,1.99609 1.72461,-0.99609 871.79883,1510 -870.66016,1508.0293 -1.13867,-0.6309 0,1.6016 L 0,2402 0,2263 750.25388,2263 1541.2226,893 746.21239,-484 0,-484 Z"
      id="path19375"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cccccccccccccc" />
