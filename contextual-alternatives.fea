@@ -1,4 +1,7 @@
-@boxingglyph = [ \square_box_left \A.boxed \B.boxed ];
+@boxingglyph = [
+    \square_box_left
+    \A.boxed \B.boxed
+];
 @unboxingglyph = [ \square_box_right ];
 @boxedvariant = [ \A.boxed \B.boxed ];
 @defaultvariant = [ \A \B ];
