@@ -5,8 +5,19 @@ lookup BoxContextual {
 
 lookup ModifierContextual {
     lookupflag 0;
-        sub @should_mod_next @moddable_glyph' by @modinline_glyph;
-        sub @should_box_and_mod_next @moddable_glyph' by @boxed_modinline_glyph;
+        sub @modifier_initializer @moddable_glyph'
+            by @small_caps_glyph;
+        sub @modifier_initializer @small_caps_glyph @moddable_glyph'
+            by @modinline_glyph;
+        sub @modinline_glyph @moddable_glyph'
+            by @modinline_glyph;
+
+        sub @boxed_modifier_initializer @boxed_moddable_glyph'
+            by @small_caps_glyph;
+        sub @boxed_modifier_initializer @small_caps_glyph @boxed_moddable_glyph'
+            by @boxed_modinline_glyph;
+        sub @boxed_modinline_glyph @boxed_moddable_glyph'
+            by @boxed_modinline_glyph;
 } ModifierContextual;
 
 feature calt {

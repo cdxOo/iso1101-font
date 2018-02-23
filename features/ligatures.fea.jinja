@@ -1,8 +1,17 @@
 lookup BoxingLigatures {
     lookupflag 0;
         sub \bar \bar \bracketleft by \square_box_left;
+        sub \less \bar \bracketleft by \roof_box_left;
+        sub \less \less \bracketleft by \hex_box_left;
+        sub \o \bar \bracketleft by \circle_box_left;
+
         sub \bracketright \bar \bar by \square_box_right;
+        sub \bracketright \bar \greater by \roof_box_right;
+        sub \bracketright \greater \greater by \hex_box_right;
+        
         sub \parenleft \colon by \modifier_left;
+        sub \colon \parenleft by \modifier_right;
+
 } BoxingLigatures;
 
 lookup SymbolLigatures {
@@ -13,15 +22,25 @@ lookup SymbolLigatures {
     {% endfor %}
 } SymbolLigatures;
 
+lookup ModCircledLigatures {
+    lookupflag 0;
+    {% for glyph in moddable_glyphs %}
+        sub @modifier_initializer \{{ glyph }}{{ suffixes.small_caps }} \colon \parenright 
+            by \{{ glyph }}{{ suffixes.circled }};
+    {% endfor %}
+} ModCircledLigatures;
+
 feature liga {
     script DFLT;
         language dflt;
             lookup BoxingLigatures;
             lookup SymbolLigatures;
+            lookup ModCircledLigatures;
     script latn;
         language dflt;
             lookup BoxingLigatures;
             lookup SymbolLigatures;
+            lookup ModCircledLigatures;
 } liga;
 
 

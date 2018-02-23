@@ -10,25 +10,29 @@
     {% endfor %}
 ];
 
-@should_mod_next = [
+@modifier_initializer = [
     {% for glyph in modifier_initializers %}
         \{{ glyph }}
     {% endfor %}
+];
+
+@modinline_glyph = [
     {% for glyph in modinline_glyphs %}
         \{{ glyph }}
     {% endfor %}
 ];
 
-@should_box_and_mod_next = [
-    {% for glyph in boxed_modifier_initializers %}
-        \{{ glyph }}
-    {% endfor %}
-    {% for glyph in boxed_modinline_glyphs %}
-        \{{ glyph }}
+@boxed_modifier_initializer = [
+    {% for glyph in modifier_initializers %}
+        \{{ glyph }}{{ suffixes.boxed }}
     {% endfor %}
 ];
 
-
+@boxed_modinline_glyph = [
+    {% for glyph in modinline_glyphs %}
+        \{{ glyph }}{{ suffixes.boxed }}
+    {% endfor %}
+];
 
 @default_glyph = [
     {% for glyph in default_glyphs %}
@@ -63,6 +67,12 @@
     {% endfor %}
     {% for glyph in modifier_initializers %}
         \{{ glyph }}{{ suffixes.boxed }}
+    {% endfor %}
+];
+
+@small_caps_glyph = [
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}{{ suffixes.small_caps }}
     {% endfor %}
 ];
 
