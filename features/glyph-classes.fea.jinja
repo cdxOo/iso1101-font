@@ -1,0 +1,37 @@
+@should_box_next = [
+    {% for glyph in box_initializers %}
+        \{{ glyph }}
+    {% endfor %}
+    {% for glyph in box_separators %}
+        \{{ glyph }}
+    {% endfor %}
+    {% for glyph in boxed_glyphs %}
+        \{{ glyph }}
+    {% endfor %}
+]
+
+@should_mod_next = [
+    {% for glyph in modifier_initializers %}
+        \{{ glyph }}
+    {% endfor %}
+    {% for glyph in modinline_glyphs %}
+        \{{ glyph }}
+    {% endfor %}
+]
+
+@should_box_and_mod_next = [
+    {% for glyph in boxed_modifier_initializers %}
+        \{{ glyph }}
+    {% endfor %}
+    {% for glyph in boxed_modinline_glyphs %}
+        \{{ glyph }}
+    {% endfor %}
+]
+
+@default_glyph = [{{ default_glyphs }}]
+@boxed_glyph = [{{ boxed_glyphs }}]
+@modifier_glyph = [{{ modifier_glyphs }}]
+@boxed_modifier_glyphs = [{{ boxed_modifier_glyphs }}]
+
+
+

@@ -1,0 +1,24 @@
+lookup BoxingLigatures {
+    lookupflag 0;
+        sub \bar \bar \bracketleft by \square_box_left;
+        sub \bracketright \bar \bar by \square_box_right;
+        sub \parenleft \colon by \modifier_left;
+} BoxingLigatures;
+
+lookup SymbolLigatures {
+    lookupflag 0;
+    {% for sub in symbol_ligatures %}
+        sub {{ sub.sequence }} by {{ sub.replacement }}
+    {% endfor %}
+} SymbolLigatures;
+
+feature liga {
+    script DFLT;
+        language dflt;
+            lookup BoxingLigatures;
+            lookup SymbolLigatures;
+    script latn;
+        language dflt;
+            lookup BoxingLigatures;
+            lookup SymbolLigatures;
+} liga;

@@ -1,0 +1,23 @@
+lookup BoxContextual {
+    lookupflag 0;
+        sub @should_box_next @default_glyph' by @boxed_glyph;
+} BoxgContextual;
+
+lookup ModifierContextual {
+    lookupflag 0;
+        sub @should_mod_next @default_glyph' by @modifier_glyph;
+} ModifierContextual;
+
+feature calt {
+    script DFLT;
+        language dflt;
+            lookup BoxContextual;
+            lookup ModifierContextual;
+    script latn;
+        language dflt;
+            lookup BoxContextual;
+            lookup ModifierContextual;
+} calt;
+
+
+
