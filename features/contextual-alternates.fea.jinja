@@ -12,12 +12,18 @@ lookup ModifierContextual {
         sub @modinline_glyph @moddable_glyph'
             by @modinline_glyph;
 
+        sub @modinline_glyph' \modifier_right
+            by @small_caps_glyph;
+
         sub @boxed_modifier_initializer @boxed_moddable_glyph'
             by @small_caps_glyph;
         sub @boxed_modifier_initializer @small_caps_glyph @boxed_moddable_glyph'
             by @boxed_modinline_glyph;
         sub @boxed_modinline_glyph @boxed_moddable_glyph'
             by @boxed_modinline_glyph;
+        
+        sub @boxed_modinline_glyph' \modifier_right
+            by @small_caps_glyph;
 } ModifierContextual;
 
 feature calt {
