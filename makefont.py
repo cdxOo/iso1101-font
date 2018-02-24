@@ -79,7 +79,7 @@ def create_outlined_variant (font, glyph, lines_name, suffix):
 
 
 latopath = './Lato2OFL/Lato-Regular.ttf'
-isopath = './iso1101font.ttf'
+isopath = './build/iso1101-font.ttf'
 
 iso = fontforge.font()
 lato = fontforge.open(latopath)
@@ -352,6 +352,8 @@ iso.mergeFeature('build/iso1101-font.fea')
 
 iso.fontname = 'ISO1101Font'
 
+iso.selection.all()
+iso.autoHint()
 iso.generate(isopath)
 
 iso.close()
