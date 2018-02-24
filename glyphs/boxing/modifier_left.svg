@@ -8,11 +8,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   viewBox="0 -390 1918.766 2000"
+   viewBox="0 -390 1000 2000"
    id="svg4185"
    inkscape:version="0.91 r13725"
    sodipodi:docname="modifier_left.svg"
-   width="1918.766"
+   width="1000"
    height="2000">
   <metadata
      id="metadata4195">
@@ -52,7 +52,7 @@
      inkscape:object-paths="true"
      inkscape:snap-page="true"
      inkscape:zoom="0.22627417"
-     inkscape:cx="1070.1848"
+     inkscape:cx="51.509093"
      inkscape:cy="1159.4183"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
@@ -64,10 +64,6 @@
      fit-margin-bottom="0"
      inkscape:snap-nodes="true"
      inkscape:snap-bbox="false">
-    <sodipodi:guide
-       position="2000,1573.013"
-       orientation="1,0"
-       id="guide4741" />
     <sodipodi:guide
        position="0,1692.8616"
        orientation="1,0"
@@ -106,6 +102,10 @@
        position="322.61747,2000"
        orientation="0,1"
        id="guide25191" />
+    <sodipodi:guide
+       position="1506.5919,716.49999"
+       orientation="1,0"
+       id="guide42677" />
   </sodipodi:namedview>
   <path
      style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:0;stroke-opacity:1"
