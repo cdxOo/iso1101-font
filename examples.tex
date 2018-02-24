@@ -1,0 +1,16 @@
+\documentclass[12pt, a4paper]{scrreprt}
+\RequirePackage{
+    fontspec,
+    cprotect
+}
+
+\setmonofont[
+    Path = ./build/,
+    RawFeature = +calt +liga
+]{iso1101-font.ttf}
+\begin{document}
+    \texttt{||[(:A:)(:BBBBB:)]||}\\
+    \texttt{o|[\_\_:POSITION:\_\_]>>}\\
+    \texttt{(:A:)}
+\end{document}
+
