@@ -8,7 +8,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   viewBox="-200 -792 1300 2000"
+   viewBox="0 -792 1300 2000"
    id="svg26351"
    inkscape:version="0.91 r13725"
    sodipodi:docname="box_lines.svg"
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -42,19 +42,36 @@
      id="namedview26357"
      showgrid="false"
      inkscape:zoom="0.118"
-     inkscape:cx="650"
-     inkscape:cy="1000"
-     inkscape:window-x="-8"
+     inkscape:cx="-4178.8252"
+     inkscape:cy="677.58051"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg26351" />
-  <g
-     transform="matrix(1,0,0,-1,0,1610)"
-     id="g26353">
-    <path
-       d="m -188,-657 1688,0 0,-135 -1688,0 0,135 z m -12,2885 1688,0 0,-134 -1688,0 0,134 z"
-       id="path26355"
-       inkscape:connector-curvature="0"
-       style="fill:currentColor" />
-  </g>
+     inkscape:current-layer="svg26351"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-page="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-bbox="false"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true">
+    <sodipodi:guide
+       position="0,940.67797"
+       orientation="1,0"
+       id="guide4134" />
+    <sodipodi:guide
+       position="1300,538.13559"
+       orientation="1,0"
+       id="guide4136" />
+  </sodipodi:namedview>
+  <path
+     sodipodi:nodetypes="cccccccccc"
+     style="fill:currentColor"
+     inkscape:connector-curvature="0"
+     id="path26355"
+     d="M 9.17647,2267 1300,2267 l 0,135 -1290.82353,0 z M 0,-618 l 1300,0 0,134 -1300,0 z" />
 </svg>
