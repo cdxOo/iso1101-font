@@ -10,7 +10,7 @@ lookup BoxingLigatures {
         sub \bracketright \greater \greater by \hex_box_right;
         
         sub \parenleft \colon by \modifier_left;
-        sub \colon \parenleft by \modifier_right;
+        sub \colon \parenright by \modifier_right;
 
 } BoxingLigatures;
 
@@ -25,8 +25,8 @@ lookup SymbolLigatures {
 lookup ModCircledLigatures {
     lookupflag 0;
     {% for glyph in moddable_glyphs %}
-        sub @modifier_initializer \{{ glyph }} \colon \parenright 
-        by \{{ glyph }}{{ suffixes.small_caps}}{{ suffixes.modcircled }};
+        sub @modifier_initializer \{{ glyph }} \modifier_right
+            by \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modcircled }};
     {% endfor %}
 } ModCircledLigatures;
 
