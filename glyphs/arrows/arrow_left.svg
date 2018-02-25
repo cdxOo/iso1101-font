@@ -8,11 +8,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   viewBox="0 -390 1000 2000"
+   viewBox="0 -390 853.73999 2000"
    id="svg4185"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="arrow-left.svg"
-   width="1000"
+   sodipodi:docname="arrow_left.svg"
+   width="853.73999"
    height="2000">
   <metadata
      id="metadata4195">
@@ -51,8 +51,8 @@
      inkscape:snap-intersection-paths="true"
      inkscape:object-paths="true"
      inkscape:snap-page="true"
-     inkscape:zoom="0.236"
-     inkscape:cx="222.04506"
+     inkscape:zoom="0.3337544"
+     inkscape:cx="19.715045"
      inkscape:cy="909.84233"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
@@ -80,10 +80,6 @@
        orientation="1,0"
        id="guide4743" />
     <sodipodi:guide
-       position="421.44141,0.8801514"
-       orientation="1,0"
-       id="guide4747" />
-    <sodipodi:guide
        position="422.17397,0.212875"
        orientation="0,1"
        id="guide4770"
@@ -99,10 +95,6 @@
        position="421.97058,0.35824998"
        orientation="0,1"
        id="guide5383" />
-    <sodipodi:guide
-       position="421.17682,0.7165"
-       orientation="1,0"
-       id="guide5387" />
     <sodipodi:guide
        position="421.70599,0.537375"
        orientation="1,0"
@@ -149,10 +141,14 @@
        position="661.01695,905.09735"
        orientation="0,1"
        id="guide21669" />
+    <sodipodi:guide
+       position="853.7402,777.9785"
+       orientation="1,0"
+       id="guide57260" />
   </sodipodi:namedview>
   <path
      style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 743.71683,704.9023 146.2598,893.5 l 597.45703,188.5977 0,-127.1192 256.28317,0 0,-122.957 -256.28317,0 0,-127.1192 z"
+     d="M 597.45703,704.9023 0,893.5 l 597.45703,188.5977 0,-127.1192 256.28317,0 0,-122.957 -256.28317,0 0,-127.1192 z"
      id="rect21662"
      inkscape:connector-curvature="0" />
 </svg>

@@ -1,0 +1,1550 @@
+@should_box_next = [
+        \square_box_left
+        \hex_box_left
+        \roof_box_left
+        \circle_box_left
+        \box_seperator
+        \space.boxed
+        \exclam.boxed
+        \quotedbl.boxed
+        \numbersign.boxed
+        \dollar.boxed
+        \percent.boxed
+        \ampersand.boxed
+        \quotesingle.boxed
+        \parenleft.boxed
+        \parenright.boxed
+        \asterisk.boxed
+        \plus.boxed
+        \comma.boxed
+        \hyphen.boxed
+        \period.boxed
+        \slash.boxed
+        \zero.boxed
+        \one.boxed
+        \two.boxed
+        \three.boxed
+        \four.boxed
+        \five.boxed
+        \six.boxed
+        \seven.boxed
+        \eight.boxed
+        \nine.boxed
+        \colon.boxed
+        \semicolon.boxed
+        \less.boxed
+        \equal.boxed
+        \greater.boxed
+        \question.boxed
+        \at.boxed
+        \A.boxed
+        \B.boxed
+        \C.boxed
+        \D.boxed
+        \E.boxed
+        \F.boxed
+        \G.boxed
+        \H.boxed
+        \I.boxed
+        \J.boxed
+        \K.boxed
+        \L.boxed
+        \M.boxed
+        \N.boxed
+        \O.boxed
+        \P.boxed
+        \Q.boxed
+        \R.boxed
+        \S.boxed
+        \T.boxed
+        \U.boxed
+        \V.boxed
+        \W.boxed
+        \X.boxed
+        \Y.boxed
+        \Z.boxed
+        \bracketleft.boxed
+        \backslash.boxed
+        \bracketright.boxed
+        \asciicircum.boxed
+        \underscore.boxed
+        \grave.boxed
+        \a.boxed
+        \b.boxed
+        \c.boxed
+        \d.boxed
+        \e.boxed
+        \f.boxed
+        \g.boxed
+        \h.boxed
+        \i.boxed
+        \j.boxed
+        \k.boxed
+        \l.boxed
+        \m.boxed
+        \n.boxed
+        \o.boxed
+        \p.boxed
+        \q.boxed
+        \r.boxed
+        \s.boxed
+        \t.boxed
+        \u.boxed
+        \v.boxed
+        \w.boxed
+        \x.boxed
+        \y.boxed
+        \z.boxed
+        \braceleft.boxed
+        \bar.boxed
+        \braceright.boxed
+        \asciitilde.boxed
+        \plusminus.boxed
+        \uni2197.boxed
+        \uni21D7.boxed
+        \angle.boxed
+        \uni2300.boxed
+        \uni2312.boxed
+        \uni2313.boxed
+        \uni2316.boxed
+        \uni232D.boxed
+        \uni232F.boxed
+        \uni23E4.boxed
+        \uni23E5.boxed
+        \circle.boxed
+        \uni25CE.boxed
+        \uni27C2.boxed
+        \uni2AFD.boxed
+        \angularity.boxed
+        \circularrunout.boxed
+        \circularity.boxed
+        \concentricity.boxed
+        \diameter.boxed
+        \flatness.boxed
+        \lineprofile.boxed
+        \parallelism.boxed
+        \perpendicularity.boxed
+        \position.boxed
+        \straightness.boxed
+        \surfaceprofile.boxed
+        \symmetry.boxed
+        \totalrunout.boxed
+        \cylindricity.boxed
+        \A.sc.modinline.boxed
+        \B.sc.modinline.boxed
+        \C.sc.modinline.boxed
+        \D.sc.modinline.boxed
+        \E.sc.modinline.boxed
+        \F.sc.modinline.boxed
+        \G.sc.modinline.boxed
+        \H.sc.modinline.boxed
+        \I.sc.modinline.boxed
+        \J.sc.modinline.boxed
+        \K.sc.modinline.boxed
+        \L.sc.modinline.boxed
+        \M.sc.modinline.boxed
+        \N.sc.modinline.boxed
+        \O.sc.modinline.boxed
+        \P.sc.modinline.boxed
+        \Q.sc.modinline.boxed
+        \R.sc.modinline.boxed
+        \S.sc.modinline.boxed
+        \T.sc.modinline.boxed
+        \U.sc.modinline.boxed
+        \V.sc.modinline.boxed
+        \W.sc.modinline.boxed
+        \X.sc.modinline.boxed
+        \Y.sc.modinline.boxed
+        \Z.sc.modinline.boxed
+        \A.sc.modcircled.boxed
+        \B.sc.modcircled.boxed
+        \C.sc.modcircled.boxed
+        \D.sc.modcircled.boxed
+        \E.sc.modcircled.boxed
+        \F.sc.modcircled.boxed
+        \G.sc.modcircled.boxed
+        \H.sc.modcircled.boxed
+        \I.sc.modcircled.boxed
+        \J.sc.modcircled.boxed
+        \K.sc.modcircled.boxed
+        \L.sc.modcircled.boxed
+        \M.sc.modcircled.boxed
+        \N.sc.modcircled.boxed
+        \O.sc.modcircled.boxed
+        \P.sc.modcircled.boxed
+        \Q.sc.modcircled.boxed
+        \R.sc.modcircled.boxed
+        \S.sc.modcircled.boxed
+        \T.sc.modcircled.boxed
+        \U.sc.modcircled.boxed
+        \V.sc.modcircled.boxed
+        \W.sc.modcircled.boxed
+        \X.sc.modcircled.boxed
+        \Y.sc.modcircled.boxed
+        \Z.sc.modcircled.boxed
+        \A.sc.modleft.boxed
+        \B.sc.modleft.boxed
+        \C.sc.modleft.boxed
+        \D.sc.modleft.boxed
+        \E.sc.modleft.boxed
+        \F.sc.modleft.boxed
+        \G.sc.modleft.boxed
+        \H.sc.modleft.boxed
+        \I.sc.modleft.boxed
+        \J.sc.modleft.boxed
+        \K.sc.modleft.boxed
+        \L.sc.modleft.boxed
+        \M.sc.modleft.boxed
+        \N.sc.modleft.boxed
+        \O.sc.modleft.boxed
+        \P.sc.modleft.boxed
+        \Q.sc.modleft.boxed
+        \R.sc.modleft.boxed
+        \S.sc.modleft.boxed
+        \T.sc.modleft.boxed
+        \U.sc.modleft.boxed
+        \V.sc.modleft.boxed
+        \W.sc.modleft.boxed
+        \X.sc.modleft.boxed
+        \Y.sc.modleft.boxed
+        \Z.sc.modleft.boxed
+        \A.sc.modright.boxed
+        \B.sc.modright.boxed
+        \C.sc.modright.boxed
+        \D.sc.modright.boxed
+        \E.sc.modright.boxed
+        \F.sc.modright.boxed
+        \G.sc.modright.boxed
+        \H.sc.modright.boxed
+        \I.sc.modright.boxed
+        \J.sc.modright.boxed
+        \K.sc.modright.boxed
+        \L.sc.modright.boxed
+        \M.sc.modright.boxed
+        \N.sc.modright.boxed
+        \O.sc.modright.boxed
+        \P.sc.modright.boxed
+        \Q.sc.modright.boxed
+        \R.sc.modright.boxed
+        \S.sc.modright.boxed
+        \T.sc.modright.boxed
+        \U.sc.modright.boxed
+        \V.sc.modright.boxed
+        \W.sc.modright.boxed
+        \X.sc.modright.boxed
+        \Y.sc.modright.boxed
+        \Z.sc.modright.boxed
+        \modifier_left.boxed
+        \modifier_lines.boxed
+        \modifier_right.boxed
+        \modifier_circle.boxed
+        \arrow_left.boxed
+        \arrow_left_circle.boxed
+        \arrow_left_bullseye.boxed
+        \arrow_right.boxed
+        \arrow_mid_none.boxed
+        \arrow_mid_circle.boxed
+        \arrow_mid_bullseye.boxed
+];
+
+@modifier_initializer = [
+        \modifier_left
+];
+
+@modleft_glyph = [
+        \A.sc.modleft
+        \B.sc.modleft
+        \C.sc.modleft
+        \D.sc.modleft
+        \E.sc.modleft
+        \F.sc.modleft
+        \G.sc.modleft
+        \H.sc.modleft
+        \I.sc.modleft
+        \J.sc.modleft
+        \K.sc.modleft
+        \L.sc.modleft
+        \M.sc.modleft
+        \N.sc.modleft
+        \O.sc.modleft
+        \P.sc.modleft
+        \Q.sc.modleft
+        \R.sc.modleft
+        \S.sc.modleft
+        \T.sc.modleft
+        \U.sc.modleft
+        \V.sc.modleft
+        \W.sc.modleft
+        \X.sc.modleft
+        \Y.sc.modleft
+        \Z.sc.modleft
+];
+
+@modright_glyph = [
+        \A.sc.modright
+        \B.sc.modright
+        \C.sc.modright
+        \D.sc.modright
+        \E.sc.modright
+        \F.sc.modright
+        \G.sc.modright
+        \H.sc.modright
+        \I.sc.modright
+        \J.sc.modright
+        \K.sc.modright
+        \L.sc.modright
+        \M.sc.modright
+        \N.sc.modright
+        \O.sc.modright
+        \P.sc.modright
+        \Q.sc.modright
+        \R.sc.modright
+        \S.sc.modright
+        \T.sc.modright
+        \U.sc.modright
+        \V.sc.modright
+        \W.sc.modright
+        \X.sc.modright
+        \Y.sc.modright
+        \Z.sc.modright
+];
+
+@modinline_glyph = [
+        \A.sc.modinline
+        \B.sc.modinline
+        \C.sc.modinline
+        \D.sc.modinline
+        \E.sc.modinline
+        \F.sc.modinline
+        \G.sc.modinline
+        \H.sc.modinline
+        \I.sc.modinline
+        \J.sc.modinline
+        \K.sc.modinline
+        \L.sc.modinline
+        \M.sc.modinline
+        \N.sc.modinline
+        \O.sc.modinline
+        \P.sc.modinline
+        \Q.sc.modinline
+        \R.sc.modinline
+        \S.sc.modinline
+        \T.sc.modinline
+        \U.sc.modinline
+        \V.sc.modinline
+        \W.sc.modinline
+        \X.sc.modinline
+        \Y.sc.modinline
+        \Z.sc.modinline
+];
+
+@boxed_modifier_initializer = [
+        \modifier_left.boxed
+];
+
+@boxed_modinline_glyph = [
+        \A.sc.modinline.boxed
+        \B.sc.modinline.boxed
+        \C.sc.modinline.boxed
+        \D.sc.modinline.boxed
+        \E.sc.modinline.boxed
+        \F.sc.modinline.boxed
+        \G.sc.modinline.boxed
+        \H.sc.modinline.boxed
+        \I.sc.modinline.boxed
+        \J.sc.modinline.boxed
+        \K.sc.modinline.boxed
+        \L.sc.modinline.boxed
+        \M.sc.modinline.boxed
+        \N.sc.modinline.boxed
+        \O.sc.modinline.boxed
+        \P.sc.modinline.boxed
+        \Q.sc.modinline.boxed
+        \R.sc.modinline.boxed
+        \S.sc.modinline.boxed
+        \T.sc.modinline.boxed
+        \U.sc.modinline.boxed
+        \V.sc.modinline.boxed
+        \W.sc.modinline.boxed
+        \X.sc.modinline.boxed
+        \Y.sc.modinline.boxed
+        \Z.sc.modinline.boxed
+];
+
+@default_glyph = [
+        \space
+        \exclam
+        \quotedbl
+        \numbersign
+        \dollar
+        \percent
+        \ampersand
+        \quotesingle
+        \parenleft
+        \parenright
+        \asterisk
+        \plus
+        \comma
+        \hyphen
+        \period
+        \slash
+        \zero
+        \one
+        \two
+        \three
+        \four
+        \five
+        \six
+        \seven
+        \eight
+        \nine
+        \colon
+        \semicolon
+        \less
+        \equal
+        \greater
+        \question
+        \at
+        \A
+        \B
+        \C
+        \D
+        \E
+        \F
+        \G
+        \H
+        \I
+        \J
+        \K
+        \L
+        \M
+        \N
+        \O
+        \P
+        \Q
+        \R
+        \S
+        \T
+        \U
+        \V
+        \W
+        \X
+        \Y
+        \Z
+        \bracketleft
+        \backslash
+        \bracketright
+        \asciicircum
+        \underscore
+        \grave
+        \a
+        \b
+        \c
+        \d
+        \e
+        \f
+        \g
+        \h
+        \i
+        \j
+        \k
+        \l
+        \m
+        \n
+        \o
+        \p
+        \q
+        \r
+        \s
+        \t
+        \u
+        \v
+        \w
+        \x
+        \y
+        \z
+        \braceleft
+        \bar
+        \braceright
+        \asciitilde
+        \plusminus
+        \uni2197
+        \uni21D7
+        \angle
+        \uni2300
+        \uni2312
+        \uni2313
+        \uni2316
+        \uni232D
+        \uni232F
+        \uni23E4
+        \uni23E5
+        \circle
+        \uni25CE
+        \uni27C2
+        \uni2AFD
+        \angularity
+        \circularrunout
+        \circularity
+        \concentricity
+        \diameter
+        \flatness
+        \lineprofile
+        \parallelism
+        \perpendicularity
+        \position
+        \straightness
+        \surfaceprofile
+        \symmetry
+        \totalrunout
+        \cylindricity
+];
+
+@boxable_glyph = [
+        \space
+        \exclam
+        \quotedbl
+        \numbersign
+        \dollar
+        \percent
+        \ampersand
+        \quotesingle
+        \parenleft
+        \parenright
+        \asterisk
+        \plus
+        \comma
+        \hyphen
+        \period
+        \slash
+        \zero
+        \one
+        \two
+        \three
+        \four
+        \five
+        \six
+        \seven
+        \eight
+        \nine
+        \colon
+        \semicolon
+        \less
+        \equal
+        \greater
+        \question
+        \at
+        \A
+        \B
+        \C
+        \D
+        \E
+        \F
+        \G
+        \H
+        \I
+        \J
+        \K
+        \L
+        \M
+        \N
+        \O
+        \P
+        \Q
+        \R
+        \S
+        \T
+        \U
+        \V
+        \W
+        \X
+        \Y
+        \Z
+        \bracketleft
+        \backslash
+        \bracketright
+        \asciicircum
+        \underscore
+        \grave
+        \a
+        \b
+        \c
+        \d
+        \e
+        \f
+        \g
+        \h
+        \i
+        \j
+        \k
+        \l
+        \m
+        \n
+        \o
+        \p
+        \q
+        \r
+        \s
+        \t
+        \u
+        \v
+        \w
+        \x
+        \y
+        \z
+        \braceleft
+        \bar
+        \braceright
+        \asciitilde
+        \plusminus
+        \uni2197
+        \uni21D7
+        \angle
+        \uni2300
+        \uni2312
+        \uni2313
+        \uni2316
+        \uni232D
+        \uni232F
+        \uni23E4
+        \uni23E5
+        \circle
+        \uni25CE
+        \uni27C2
+        \uni2AFD
+        \angularity
+        \circularrunout
+        \circularity
+        \concentricity
+        \diameter
+        \flatness
+        \lineprofile
+        \parallelism
+        \perpendicularity
+        \position
+        \straightness
+        \surfaceprofile
+        \symmetry
+        \totalrunout
+        \cylindricity
+        \A.sc.modinline
+        \B.sc.modinline
+        \C.sc.modinline
+        \D.sc.modinline
+        \E.sc.modinline
+        \F.sc.modinline
+        \G.sc.modinline
+        \H.sc.modinline
+        \I.sc.modinline
+        \J.sc.modinline
+        \K.sc.modinline
+        \L.sc.modinline
+        \M.sc.modinline
+        \N.sc.modinline
+        \O.sc.modinline
+        \P.sc.modinline
+        \Q.sc.modinline
+        \R.sc.modinline
+        \S.sc.modinline
+        \T.sc.modinline
+        \U.sc.modinline
+        \V.sc.modinline
+        \W.sc.modinline
+        \X.sc.modinline
+        \Y.sc.modinline
+        \Z.sc.modinline
+        \A.sc.modcircled
+        \B.sc.modcircled
+        \C.sc.modcircled
+        \D.sc.modcircled
+        \E.sc.modcircled
+        \F.sc.modcircled
+        \G.sc.modcircled
+        \H.sc.modcircled
+        \I.sc.modcircled
+        \J.sc.modcircled
+        \K.sc.modcircled
+        \L.sc.modcircled
+        \M.sc.modcircled
+        \N.sc.modcircled
+        \O.sc.modcircled
+        \P.sc.modcircled
+        \Q.sc.modcircled
+        \R.sc.modcircled
+        \S.sc.modcircled
+        \T.sc.modcircled
+        \U.sc.modcircled
+        \V.sc.modcircled
+        \W.sc.modcircled
+        \X.sc.modcircled
+        \Y.sc.modcircled
+        \Z.sc.modcircled
+        \modifier_left
+        \A.sc.modleft
+        \B.sc.modleft
+        \C.sc.modleft
+        \D.sc.modleft
+        \E.sc.modleft
+        \F.sc.modleft
+        \G.sc.modleft
+        \H.sc.modleft
+        \I.sc.modleft
+        \J.sc.modleft
+        \K.sc.modleft
+        \L.sc.modleft
+        \M.sc.modleft
+        \N.sc.modleft
+        \O.sc.modleft
+        \P.sc.modleft
+        \Q.sc.modleft
+        \R.sc.modleft
+        \S.sc.modleft
+        \T.sc.modleft
+        \U.sc.modleft
+        \V.sc.modleft
+        \W.sc.modleft
+        \X.sc.modleft
+        \Y.sc.modleft
+        \Z.sc.modleft
+        \A.sc.modright
+        \B.sc.modright
+        \C.sc.modright
+        \D.sc.modright
+        \E.sc.modright
+        \F.sc.modright
+        \G.sc.modright
+        \H.sc.modright
+        \I.sc.modright
+        \J.sc.modright
+        \K.sc.modright
+        \L.sc.modright
+        \M.sc.modright
+        \N.sc.modright
+        \O.sc.modright
+        \P.sc.modright
+        \Q.sc.modright
+        \R.sc.modright
+        \S.sc.modright
+        \T.sc.modright
+        \U.sc.modright
+        \V.sc.modright
+        \W.sc.modright
+        \X.sc.modright
+        \Y.sc.modright
+        \Z.sc.modright
+        \arrow_left
+        \arrow_left_circle
+        \arrow_left_bullseye
+        \arrow_right
+        \arrow_mid_none
+        \arrow_mid_circle
+        \arrow_mid_bullseye
+];
+
+@boxed_glyph = [
+        \space.boxed
+        \exclam.boxed
+        \quotedbl.boxed
+        \numbersign.boxed
+        \dollar.boxed
+        \percent.boxed
+        \ampersand.boxed
+        \quotesingle.boxed
+        \parenleft.boxed
+        \parenright.boxed
+        \asterisk.boxed
+        \plus.boxed
+        \comma.boxed
+        \hyphen.boxed
+        \period.boxed
+        \slash.boxed
+        \zero.boxed
+        \one.boxed
+        \two.boxed
+        \three.boxed
+        \four.boxed
+        \five.boxed
+        \six.boxed
+        \seven.boxed
+        \eight.boxed
+        \nine.boxed
+        \colon.boxed
+        \semicolon.boxed
+        \less.boxed
+        \equal.boxed
+        \greater.boxed
+        \question.boxed
+        \at.boxed
+        \A.boxed
+        \B.boxed
+        \C.boxed
+        \D.boxed
+        \E.boxed
+        \F.boxed
+        \G.boxed
+        \H.boxed
+        \I.boxed
+        \J.boxed
+        \K.boxed
+        \L.boxed
+        \M.boxed
+        \N.boxed
+        \O.boxed
+        \P.boxed
+        \Q.boxed
+        \R.boxed
+        \S.boxed
+        \T.boxed
+        \U.boxed
+        \V.boxed
+        \W.boxed
+        \X.boxed
+        \Y.boxed
+        \Z.boxed
+        \bracketleft.boxed
+        \backslash.boxed
+        \bracketright.boxed
+        \asciicircum.boxed
+        \underscore.boxed
+        \grave.boxed
+        \a.boxed
+        \b.boxed
+        \c.boxed
+        \d.boxed
+        \e.boxed
+        \f.boxed
+        \g.boxed
+        \h.boxed
+        \i.boxed
+        \j.boxed
+        \k.boxed
+        \l.boxed
+        \m.boxed
+        \n.boxed
+        \o.boxed
+        \p.boxed
+        \q.boxed
+        \r.boxed
+        \s.boxed
+        \t.boxed
+        \u.boxed
+        \v.boxed
+        \w.boxed
+        \x.boxed
+        \y.boxed
+        \z.boxed
+        \braceleft.boxed
+        \bar.boxed
+        \braceright.boxed
+        \asciitilde.boxed
+        \plusminus.boxed
+        \uni2197.boxed
+        \uni21D7.boxed
+        \angle.boxed
+        \uni2300.boxed
+        \uni2312.boxed
+        \uni2313.boxed
+        \uni2316.boxed
+        \uni232D.boxed
+        \uni232F.boxed
+        \uni23E4.boxed
+        \uni23E5.boxed
+        \circle.boxed
+        \uni25CE.boxed
+        \uni27C2.boxed
+        \uni2AFD.boxed
+        \angularity.boxed
+        \circularrunout.boxed
+        \circularity.boxed
+        \concentricity.boxed
+        \diameter.boxed
+        \flatness.boxed
+        \lineprofile.boxed
+        \parallelism.boxed
+        \perpendicularity.boxed
+        \position.boxed
+        \straightness.boxed
+        \surfaceprofile.boxed
+        \symmetry.boxed
+        \totalrunout.boxed
+        \cylindricity.boxed
+        \A.sc.modinline.boxed
+        \B.sc.modinline.boxed
+        \C.sc.modinline.boxed
+        \D.sc.modinline.boxed
+        \E.sc.modinline.boxed
+        \F.sc.modinline.boxed
+        \G.sc.modinline.boxed
+        \H.sc.modinline.boxed
+        \I.sc.modinline.boxed
+        \J.sc.modinline.boxed
+        \K.sc.modinline.boxed
+        \L.sc.modinline.boxed
+        \M.sc.modinline.boxed
+        \N.sc.modinline.boxed
+        \O.sc.modinline.boxed
+        \P.sc.modinline.boxed
+        \Q.sc.modinline.boxed
+        \R.sc.modinline.boxed
+        \S.sc.modinline.boxed
+        \T.sc.modinline.boxed
+        \U.sc.modinline.boxed
+        \V.sc.modinline.boxed
+        \W.sc.modinline.boxed
+        \X.sc.modinline.boxed
+        \Y.sc.modinline.boxed
+        \Z.sc.modinline.boxed
+        \A.sc.modcircled.boxed
+        \B.sc.modcircled.boxed
+        \C.sc.modcircled.boxed
+        \D.sc.modcircled.boxed
+        \E.sc.modcircled.boxed
+        \F.sc.modcircled.boxed
+        \G.sc.modcircled.boxed
+        \H.sc.modcircled.boxed
+        \I.sc.modcircled.boxed
+        \J.sc.modcircled.boxed
+        \K.sc.modcircled.boxed
+        \L.sc.modcircled.boxed
+        \M.sc.modcircled.boxed
+        \N.sc.modcircled.boxed
+        \O.sc.modcircled.boxed
+        \P.sc.modcircled.boxed
+        \Q.sc.modcircled.boxed
+        \R.sc.modcircled.boxed
+        \S.sc.modcircled.boxed
+        \T.sc.modcircled.boxed
+        \U.sc.modcircled.boxed
+        \V.sc.modcircled.boxed
+        \W.sc.modcircled.boxed
+        \X.sc.modcircled.boxed
+        \Y.sc.modcircled.boxed
+        \Z.sc.modcircled.boxed
+        \modifier_left.boxed
+        \A.sc.modleft.boxed
+        \B.sc.modleft.boxed
+        \C.sc.modleft.boxed
+        \D.sc.modleft.boxed
+        \E.sc.modleft.boxed
+        \F.sc.modleft.boxed
+        \G.sc.modleft.boxed
+        \H.sc.modleft.boxed
+        \I.sc.modleft.boxed
+        \J.sc.modleft.boxed
+        \K.sc.modleft.boxed
+        \L.sc.modleft.boxed
+        \M.sc.modleft.boxed
+        \N.sc.modleft.boxed
+        \O.sc.modleft.boxed
+        \P.sc.modleft.boxed
+        \Q.sc.modleft.boxed
+        \R.sc.modleft.boxed
+        \S.sc.modleft.boxed
+        \T.sc.modleft.boxed
+        \U.sc.modleft.boxed
+        \V.sc.modleft.boxed
+        \W.sc.modleft.boxed
+        \X.sc.modleft.boxed
+        \Y.sc.modleft.boxed
+        \Z.sc.modleft.boxed
+        \A.sc.modright.boxed
+        \B.sc.modright.boxed
+        \C.sc.modright.boxed
+        \D.sc.modright.boxed
+        \E.sc.modright.boxed
+        \F.sc.modright.boxed
+        \G.sc.modright.boxed
+        \H.sc.modright.boxed
+        \I.sc.modright.boxed
+        \J.sc.modright.boxed
+        \K.sc.modright.boxed
+        \L.sc.modright.boxed
+        \M.sc.modright.boxed
+        \N.sc.modright.boxed
+        \O.sc.modright.boxed
+        \P.sc.modright.boxed
+        \Q.sc.modright.boxed
+        \R.sc.modright.boxed
+        \S.sc.modright.boxed
+        \T.sc.modright.boxed
+        \U.sc.modright.boxed
+        \V.sc.modright.boxed
+        \W.sc.modright.boxed
+        \X.sc.modright.boxed
+        \Y.sc.modright.boxed
+        \Z.sc.modright.boxed
+        \arrow_left.boxed
+        \arrow_left_circle.boxed
+        \arrow_left_bullseye.boxed
+        \arrow_right.boxed
+        \arrow_mid_none.boxed
+        \arrow_mid_circle.boxed
+        \arrow_mid_bullseye.boxed
+];
+
+@small_caps_glyph = [
+        \A.sc
+        \B.sc
+        \C.sc
+        \D.sc
+        \E.sc
+        \F.sc
+        \G.sc
+        \H.sc
+        \I.sc
+        \J.sc
+        \K.sc
+        \L.sc
+        \M.sc
+        \N.sc
+        \O.sc
+        \P.sc
+        \Q.sc
+        \R.sc
+        \S.sc
+        \T.sc
+        \U.sc
+        \V.sc
+        \W.sc
+        \X.sc
+        \Y.sc
+        \Z.sc
+];
+
+@moddable_glyph = [
+        \A
+        \B
+        \C
+        \D
+        \E
+        \F
+        \G
+        \H
+        \I
+        \J
+        \K
+        \L
+        \M
+        \N
+        \O
+        \P
+        \Q
+        \R
+        \S
+        \T
+        \U
+        \V
+        \W
+        \X
+        \Y
+        \Z
+];
+
+@modinline_glyph = [
+        \A.sc.modinline
+        \B.sc.modinline
+        \C.sc.modinline
+        \D.sc.modinline
+        \E.sc.modinline
+        \F.sc.modinline
+        \G.sc.modinline
+        \H.sc.modinline
+        \I.sc.modinline
+        \J.sc.modinline
+        \K.sc.modinline
+        \L.sc.modinline
+        \M.sc.modinline
+        \N.sc.modinline
+        \O.sc.modinline
+        \P.sc.modinline
+        \Q.sc.modinline
+        \R.sc.modinline
+        \S.sc.modinline
+        \T.sc.modinline
+        \U.sc.modinline
+        \V.sc.modinline
+        \W.sc.modinline
+        \X.sc.modinline
+        \Y.sc.modinline
+        \Z.sc.modinline
+];
+
+@boxed_moddable_glyph = [
+        \A.boxed
+        \B.boxed
+        \C.boxed
+        \D.boxed
+        \E.boxed
+        \F.boxed
+        \G.boxed
+        \H.boxed
+        \I.boxed
+        \J.boxed
+        \K.boxed
+        \L.boxed
+        \M.boxed
+        \N.boxed
+        \O.boxed
+        \P.boxed
+        \Q.boxed
+        \R.boxed
+        \S.boxed
+        \T.boxed
+        \U.boxed
+        \V.boxed
+        \W.boxed
+        \X.boxed
+        \Y.boxed
+        \Z.boxed
+];
+
+@boxed_modinline_glyph = [
+        \A.sc.modinline.boxed
+        \B.sc.modinline.boxed
+        \C.sc.modinline.boxed
+        \D.sc.modinline.boxed
+        \E.sc.modinline.boxed
+        \F.sc.modinline.boxed
+        \G.sc.modinline.boxed
+        \H.sc.modinline.boxed
+        \I.sc.modinline.boxed
+        \J.sc.modinline.boxed
+        \K.sc.modinline.boxed
+        \L.sc.modinline.boxed
+        \M.sc.modinline.boxed
+        \N.sc.modinline.boxed
+        \O.sc.modinline.boxed
+        \P.sc.modinline.boxed
+        \Q.sc.modinline.boxed
+        \R.sc.modinline.boxed
+        \S.sc.modinline.boxed
+        \T.sc.modinline.boxed
+        \U.sc.modinline.boxed
+        \V.sc.modinline.boxed
+        \W.sc.modinline.boxed
+        \X.sc.modinline.boxed
+        \Y.sc.modinline.boxed
+        \Z.sc.modinline.boxed
+];
+
+@boxed_modleft_glyph = [
+        \A.sc.modleft.boxed
+        \B.sc.modleft.boxed
+        \C.sc.modleft.boxed
+        \D.sc.modleft.boxed
+        \E.sc.modleft.boxed
+        \F.sc.modleft.boxed
+        \G.sc.modleft.boxed
+        \H.sc.modleft.boxed
+        \I.sc.modleft.boxed
+        \J.sc.modleft.boxed
+        \K.sc.modleft.boxed
+        \L.sc.modleft.boxed
+        \M.sc.modleft.boxed
+        \N.sc.modleft.boxed
+        \O.sc.modleft.boxed
+        \P.sc.modleft.boxed
+        \Q.sc.modleft.boxed
+        \R.sc.modleft.boxed
+        \S.sc.modleft.boxed
+        \T.sc.modleft.boxed
+        \U.sc.modleft.boxed
+        \V.sc.modleft.boxed
+        \W.sc.modleft.boxed
+        \X.sc.modleft.boxed
+        \Y.sc.modleft.boxed
+        \Z.sc.modleft.boxed
+];
+
+@boxed_modright_glyph = [
+        \A.sc.modright.boxed
+        \B.sc.modright.boxed
+        \C.sc.modright.boxed
+        \D.sc.modright.boxed
+        \E.sc.modright.boxed
+        \F.sc.modright.boxed
+        \G.sc.modright.boxed
+        \H.sc.modright.boxed
+        \I.sc.modright.boxed
+        \J.sc.modright.boxed
+        \K.sc.modright.boxed
+        \L.sc.modright.boxed
+        \M.sc.modright.boxed
+        \N.sc.modright.boxed
+        \O.sc.modright.boxed
+        \P.sc.modright.boxed
+        \Q.sc.modright.boxed
+        \R.sc.modright.boxed
+        \S.sc.modright.boxed
+        \T.sc.modright.boxed
+        \U.sc.modright.boxed
+        \V.sc.modright.boxed
+        \W.sc.modright.boxed
+        \X.sc.modright.boxed
+        \Y.sc.modright.boxed
+        \Z.sc.modright.boxed
+];
+
+
+
+
+
+lookup BoxingLigatures {
+    lookupflag 0;
+        sub \bar \bar \bracketleft by \square_box_left;
+        sub \less \bar \bracketleft by \roof_box_left;
+        sub \less \less \bracketleft by \hex_box_left;
+        sub \o \bar \bracketleft by \circle_box_left;
+
+        sub \bracketright \bar \bracketleft by \box_seperator;
+
+        sub \bracketright \bar \bar by \square_box_right;
+        sub \bracketright \bar \greater by \roof_box_right;
+        sub \bracketright \greater \greater by \hex_box_right;
+        
+        sub \parenleft \colon by \modifier_left;
+        sub \colon \parenright by \modifier_right;
+
+} BoxingLigatures;
+
+lookup ArrowLigatures {
+    lookupflag 0;
+    sub \less \colon by \arrow_left;
+    sub \colon \greater by \arrow_right;
+
+    sub \less \o by \arrow_left_circle;
+    sub \less \O \o by \arrow_left_bullseye;
+} ArrowLigatures;
+
+lookup SymbolLigatures {
+    lookupflag 0;
+        sub \colon \colon  \A  \N  \G  \U  \L  \A  \R  \I  \T  \Y  \colon \colon
+            by \angularity;
+        sub \colon \colon  \C  \I  \R  \C  \U  \L  \A  \R  \R  \U  \N  \O  \U  \T  \colon \colon
+            by \circularrunout;
+        sub \colon \colon  \C  \I  \R  \C  \U  \L  \A  \R  \I  \T  \Y  \colon \colon
+            by \circularity;
+        sub \colon \colon  \C  \O  \N  \C  \E  \N  \T  \R  \I  \C  \I  \T  \Y  \colon \colon
+            by \concentricity;
+        sub \colon \colon  \D  \I  \A  \M  \E  \T  \E  \R  \colon \colon
+            by \diameter;
+        sub \colon \colon  \F  \L  \A  \T  \N  \E  \S  \S  \colon \colon
+            by \flatness;
+        sub \colon \colon  \L  \I  \N  \E  \P  \R  \O  \F  \I  \L  \E  \colon \colon
+            by \lineprofile;
+        sub \colon \colon  \P  \A  \R  \A  \L  \L  \E  \L  \I  \S  \M  \colon \colon
+            by \parallelism;
+        sub \colon \colon  \P  \E  \R  \P  \E  \N  \D  \I  \C  \U  \L  \A  \R  \I  \T  \Y  \colon \colon
+            by \perpendicularity;
+        sub \colon \colon  \P  \O  \S  \I  \T  \I  \O  \N  \colon \colon
+            by \position;
+        sub \colon \colon  \S  \T  \R  \A  \I  \G  \H  \T  \N  \E  \S  \S  \colon \colon
+            by \straightness;
+        sub \colon \colon  \S  \U  \R  \F  \A  \C  \E  \P  \R  \O  \F  \I  \L  \E  \colon \colon
+            by \surfaceprofile;
+        sub \colon \colon  \S  \Y  \M  \M  \E  \T  \R  \Y  \colon \colon
+            by \symmetry;
+        sub \colon \colon  \T  \O  \T  \A  \L  \R  \U  \N  \O  \U  \T  \colon \colon
+            by \totalrunout;
+        sub \colon \colon  \C  \Y  \L  \I  \N  \D  \R  \I  \C  \I  \T  \Y  \colon \colon
+            by \cylindricity;
+    sub \plus \hyphen by \plusminus;
+} SymbolLigatures;
+
+lookup ModCircledLigatures {
+    lookupflag 0;
+        sub @modifier_initializer \A \modifier_right
+            by \A.sc.modcircled;
+        sub @modifier_initializer \B \modifier_right
+            by \B.sc.modcircled;
+        sub @modifier_initializer \C \modifier_right
+            by \C.sc.modcircled;
+        sub @modifier_initializer \D \modifier_right
+            by \D.sc.modcircled;
+        sub @modifier_initializer \E \modifier_right
+            by \E.sc.modcircled;
+        sub @modifier_initializer \F \modifier_right
+            by \F.sc.modcircled;
+        sub @modifier_initializer \G \modifier_right
+            by \G.sc.modcircled;
+        sub @modifier_initializer \H \modifier_right
+            by \H.sc.modcircled;
+        sub @modifier_initializer \I \modifier_right
+            by \I.sc.modcircled;
+        sub @modifier_initializer \J \modifier_right
+            by \J.sc.modcircled;
+        sub @modifier_initializer \K \modifier_right
+            by \K.sc.modcircled;
+        sub @modifier_initializer \L \modifier_right
+            by \L.sc.modcircled;
+        sub @modifier_initializer \M \modifier_right
+            by \M.sc.modcircled;
+        sub @modifier_initializer \N \modifier_right
+            by \N.sc.modcircled;
+        sub @modifier_initializer \O \modifier_right
+            by \O.sc.modcircled;
+        sub @modifier_initializer \P \modifier_right
+            by \P.sc.modcircled;
+        sub @modifier_initializer \Q \modifier_right
+            by \Q.sc.modcircled;
+        sub @modifier_initializer \R \modifier_right
+            by \R.sc.modcircled;
+        sub @modifier_initializer \S \modifier_right
+            by \S.sc.modcircled;
+        sub @modifier_initializer \T \modifier_right
+            by \T.sc.modcircled;
+        sub @modifier_initializer \U \modifier_right
+            by \U.sc.modcircled;
+        sub @modifier_initializer \V \modifier_right
+            by \V.sc.modcircled;
+        sub @modifier_initializer \W \modifier_right
+            by \W.sc.modcircled;
+        sub @modifier_initializer \X \modifier_right
+            by \X.sc.modcircled;
+        sub @modifier_initializer \Y \modifier_right
+            by \Y.sc.modcircled;
+        sub @modifier_initializer \Z \modifier_right
+            by \Z.sc.modcircled;
+} ModCircledLigatures;
+
+lookup ModLeftLigatures {
+    lookupflag 0;
+        sub @modifier_initializer \A
+            by \A.sc.modleft;
+        sub @modifier_initializer \B
+            by \B.sc.modleft;
+        sub @modifier_initializer \C
+            by \C.sc.modleft;
+        sub @modifier_initializer \D
+            by \D.sc.modleft;
+        sub @modifier_initializer \E
+            by \E.sc.modleft;
+        sub @modifier_initializer \F
+            by \F.sc.modleft;
+        sub @modifier_initializer \G
+            by \G.sc.modleft;
+        sub @modifier_initializer \H
+            by \H.sc.modleft;
+        sub @modifier_initializer \I
+            by \I.sc.modleft;
+        sub @modifier_initializer \J
+            by \J.sc.modleft;
+        sub @modifier_initializer \K
+            by \K.sc.modleft;
+        sub @modifier_initializer \L
+            by \L.sc.modleft;
+        sub @modifier_initializer \M
+            by \M.sc.modleft;
+        sub @modifier_initializer \N
+            by \N.sc.modleft;
+        sub @modifier_initializer \O
+            by \O.sc.modleft;
+        sub @modifier_initializer \P
+            by \P.sc.modleft;
+        sub @modifier_initializer \Q
+            by \Q.sc.modleft;
+        sub @modifier_initializer \R
+            by \R.sc.modleft;
+        sub @modifier_initializer \S
+            by \S.sc.modleft;
+        sub @modifier_initializer \T
+            by \T.sc.modleft;
+        sub @modifier_initializer \U
+            by \U.sc.modleft;
+        sub @modifier_initializer \V
+            by \V.sc.modleft;
+        sub @modifier_initializer \W
+            by \W.sc.modleft;
+        sub @modifier_initializer \X
+            by \X.sc.modleft;
+        sub @modifier_initializer \Y
+            by \Y.sc.modleft;
+        sub @modifier_initializer \Z
+            by \Z.sc.modleft;
+        sub @boxed_modifier_initializer \A
+            by \A.sc.modleft;
+        sub @boxed_modifier_initializer \B
+            by \B.sc.modleft;
+        sub @boxed_modifier_initializer \C
+            by \C.sc.modleft;
+        sub @boxed_modifier_initializer \D
+            by \D.sc.modleft;
+        sub @boxed_modifier_initializer \E
+            by \E.sc.modleft;
+        sub @boxed_modifier_initializer \F
+            by \F.sc.modleft;
+        sub @boxed_modifier_initializer \G
+            by \G.sc.modleft;
+        sub @boxed_modifier_initializer \H
+            by \H.sc.modleft;
+        sub @boxed_modifier_initializer \I
+            by \I.sc.modleft;
+        sub @boxed_modifier_initializer \J
+            by \J.sc.modleft;
+        sub @boxed_modifier_initializer \K
+            by \K.sc.modleft;
+        sub @boxed_modifier_initializer \L
+            by \L.sc.modleft;
+        sub @boxed_modifier_initializer \M
+            by \M.sc.modleft;
+        sub @boxed_modifier_initializer \N
+            by \N.sc.modleft;
+        sub @boxed_modifier_initializer \O
+            by \O.sc.modleft;
+        sub @boxed_modifier_initializer \P
+            by \P.sc.modleft;
+        sub @boxed_modifier_initializer \Q
+            by \Q.sc.modleft;
+        sub @boxed_modifier_initializer \R
+            by \R.sc.modleft;
+        sub @boxed_modifier_initializer \S
+            by \S.sc.modleft;
+        sub @boxed_modifier_initializer \T
+            by \T.sc.modleft;
+        sub @boxed_modifier_initializer \U
+            by \U.sc.modleft;
+        sub @boxed_modifier_initializer \V
+            by \V.sc.modleft;
+        sub @boxed_modifier_initializer \W
+            by \W.sc.modleft;
+        sub @boxed_modifier_initializer \X
+            by \X.sc.modleft;
+        sub @boxed_modifier_initializer \Y
+            by \Y.sc.modleft;
+        sub @boxed_modifier_initializer \Z
+            by \Z.sc.modleft;
+} ModLeftLigatures;
+
+lookup ModRightLigatures {
+    lookupflag 0;
+        sub \A \modifier_right
+            by \A.sc.modright;
+        sub \B \modifier_right
+            by \B.sc.modright;
+        sub \C \modifier_right
+            by \C.sc.modright;
+        sub \D \modifier_right
+            by \D.sc.modright;
+        sub \E \modifier_right
+            by \E.sc.modright;
+        sub \F \modifier_right
+            by \F.sc.modright;
+        sub \G \modifier_right
+            by \G.sc.modright;
+        sub \H \modifier_right
+            by \H.sc.modright;
+        sub \I \modifier_right
+            by \I.sc.modright;
+        sub \J \modifier_right
+            by \J.sc.modright;
+        sub \K \modifier_right
+            by \K.sc.modright;
+        sub \L \modifier_right
+            by \L.sc.modright;
+        sub \M \modifier_right
+            by \M.sc.modright;
+        sub \N \modifier_right
+            by \N.sc.modright;
+        sub \O \modifier_right
+            by \O.sc.modright;
+        sub \P \modifier_right
+            by \P.sc.modright;
+        sub \Q \modifier_right
+            by \Q.sc.modright;
+        sub \R \modifier_right
+            by \R.sc.modright;
+        sub \S \modifier_right
+            by \S.sc.modright;
+        sub \T \modifier_right
+            by \T.sc.modright;
+        sub \U \modifier_right
+            by \U.sc.modright;
+        sub \V \modifier_right
+            by \V.sc.modright;
+        sub \W \modifier_right
+            by \W.sc.modright;
+        sub \X \modifier_right
+            by \X.sc.modright;
+        sub \Y \modifier_right
+            by \Y.sc.modright;
+        sub \Z \modifier_right
+            by \Z.sc.modright;
+} ModRightLigatures;
+
+
+
+feature liga {
+    script DFLT;
+        language dflt;
+            lookup BoxingLigatures;
+            lookup SymbolLigatures;
+            lookup ModCircledLigatures;
+            lookup ModLeftLigatures;
+            lookup ModRightLigatures;
+            lookup ArrowLigatures;
+    script latn;
+        language dflt;
+            lookup BoxingLigatures;
+            lookup SymbolLigatures;
+            lookup ModCircledLigatures;
+            lookup ModLeftLigatures;
+            lookup ModRightLigatures;
+            lookup ArrowLigatures;
+} liga;
+
+
+
+
+lookup BoxContextual {
+    lookupflag 0;
+        sub @should_box_next @boxable_glyph' by @boxed_glyph;
+} BoxContextual;
+
+lookup ModifierContextual {
+    lookupflag 0;
+        sub @modleft_glyph @moddable_glyph'
+            by @modinline_glyph;
+        sub @modinline_glyph @moddable_glyph'
+            by @modinline_glyph;
+
+        sub @boxed_modleft_glyph @boxed_moddable_glyph'
+            by @boxed_modinline_glyph;
+        sub @boxed_modinline_glyph @boxed_moddable_glyph'
+            by @boxed_modinline_glyph;
+        
+} ModifierContextual;
+
+lookup ArrowContextual {
+    lookupflag 0;
+        sub \arrow_left \colon' by \arrow_mid_none;
+        sub \arrow_left.boxed \colon.boxed' by \arrow_mid_none.boxed;
+
+        sub \arrow_left \o' by \arrow_mid_circle;
+        sub \arrow_left \O' \o' by \arrow_mid_bullseye;
+
+        sub \arrow_mid_none \o' by \arrow_mid_circle;
+        sub \arrow_mid_none \O' \o' by \arrow_mid_bullseye;
+
+        sub \arrow_mid_none \colon' by \arrow_mid_none;
+        sub \arrow_mid_circle \colon' by \arrow_mid_none;
+        sub \arrow_mid_bullseye \colon' by \arrow_mid_none;
+        
+        sub \arrow_left_circle \colon' by \arrow_mid_none;
+        sub \arrow_left_bullseye \colon' by \arrow_mid_none;
+
+} ArrowContextual;
+
+feature calt {
+    script DFLT;
+        language dflt;
+            lookup BoxContextual;
+            lookup ModifierContextual;
+            lookup ArrowContextual;
+    script latn;
+        language dflt;
+            lookup BoxContextual;
+            lookup ModifierContextual;
+            lookup ArrowContextual;
+} calt;
+
+

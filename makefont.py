@@ -94,6 +94,7 @@ gm = Literal(
     lato = [
         ('!', '~'),
         'uni0020', # space
+        'plusminus',
     ],
     symbols = {
         'angularity':       'uni2220', # angle 

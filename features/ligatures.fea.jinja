@@ -31,6 +31,7 @@ lookup SymbolLigatures {
         sub \colon \colon {% for char in name %} \{{ char|upper }} {% endfor %} \colon \colon
             by \{{ name }};
     {% endfor %}
+    sub \plus \hyphen by \plusminus;
 } SymbolLigatures;
 
 lookup ModCircledLigatures {
