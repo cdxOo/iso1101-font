@@ -174,8 +174,12 @@ gm = Literal(
 
     arrows = [
         'arrow_left',
+        'arrow_left_circle',
+        'arrow_left_bullseye',
         'arrow_right',
         'arrow_mid_none',
+        'arrow_mid_circle',
+        'arrow_mid_bullseye',
     ],
 
     suffixes = Literal(

@@ -21,6 +21,20 @@ lookup ArrowContextual {
     lookupflag 0;
         sub \arrow_left \colon' by \arrow_mid_none;
         sub \arrow_left.boxed \colon.boxed' by \arrow_mid_none.boxed;
+
+        sub \arrow_left \o' by \arrow_mid_circle;
+        sub \arrow_left \O' \o' by \arrow_mid_bullseye;
+
+        sub \arrow_mid_none \o' by \arrow_mid_circle;
+        sub \arrow_mid_none \O' \o' by \arrow_mid_bullseye;
+
+        sub \arrow_mid_none \colon' by \arrow_mid_none;
+        sub \arrow_mid_circle \colon' by \arrow_mid_none;
+        sub \arrow_mid_bullseye \colon' by \arrow_mid_none;
+        
+        sub \arrow_left_circle \colon' by \arrow_mid_none;
+        sub \arrow_left_bullseye \colon' by \arrow_mid_none;
+
 } ArrowContextual;
 
 feature calt {
