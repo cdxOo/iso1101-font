@@ -32,17 +32,43 @@ lookup ModCircledLigatures {
     {% endfor %}
 } ModCircledLigatures;
 
+lookup ModLeftLigatures {
+    lookupflag 0;
+    {% for glyph in moddable_glyphs %}
+        sub @modifier_initializer \{{ glyph }}
+            by \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modleft }};
+    {% endfor %}
+    {% for glyph in moddable_glyphs %}
+        sub @boxed_modifier_initializer \{{ glyph }}
+            by \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modleft }};
+    {% endfor %}
+} ModLeftLigatures;
+
+lookup ModRightLigatures {
+    lookupflag 0;
+    {% for glyph in moddable_glyphs %}
+        sub \{{ glyph }} \modifier_right
+            by \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modright }};
+    {% endfor %}
+} ModRightLigatures;
+
+
+
 feature liga {
     script DFLT;
         language dflt;
             lookup BoxingLigatures;
             lookup SymbolLigatures;
             lookup ModCircledLigatures;
+            lookup ModLeftLigatures;
+            lookup ModRightLigatures;
     script latn;
         language dflt;
             lookup BoxingLigatures;
             lookup SymbolLigatures;
             lookup ModCircledLigatures;
+            lookup ModLeftLigatures;
+            lookup ModRightLigatures;
 } liga;
 
 

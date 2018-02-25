@@ -16,6 +16,18 @@
     {% endfor %}
 ];
 
+@modleft_glyph = [
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modleft }}
+    {% endfor %}
+];
+
+@modright_glyph = [
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modright }}
+    {% endfor %}
+];
+
 @modinline_glyph = [
     {% for glyph in modinline_glyphs %}
         \{{ glyph }}
@@ -53,6 +65,12 @@
     {% for glyph in modifier_initializers %}
         \{{ glyph }}
     {% endfor %}
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modleft }}
+    {% endfor %}
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modright }}
+    {% endfor %}
 ];
 
 @boxed_glyph = [
@@ -67,6 +85,12 @@
     {% endfor %}
     {% for glyph in modifier_initializers %}
         \{{ glyph }}{{ suffixes.boxed }}
+    {% endfor %}
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modleft }}{{ suffixes.boxed }}
+    {% endfor %}
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modright }}{{ suffixes.boxed }}
     {% endfor %}
 ];
 
@@ -99,6 +123,20 @@
         \{{ glyph }}{{ suffixes.small_caps }}{{suffixes.modinline}}{{ suffixes.boxed }}
     {% endfor %}
 ];
+
+@boxed_modleft_glyph = [
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modleft }}{{ suffixes.boxed }}
+    {% endfor %}
+];
+
+@boxed_modright_glyph = [
+    {% for glyph in moddable_glyphs %}
+        \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modright }}{{ suffixes.boxed }}
+    {% endfor %}
+];
+
+
 
 
 

@@ -176,6 +176,8 @@ gm = Literal(
         small_caps = '.sc',
         modcircled = '.modcircled',
         modinline = '.modinline',
+        modleft = '.modleft',
+        modright = '.modright',
         boxed = '.boxed',
     )
 )
@@ -194,6 +196,14 @@ generated = Literal(
         lambda n: n + gm.suffixes.small_caps + gm.suffixes.modcircled,
         gm.small_caps.keys()
     )),
+    modleft = list(map(
+        lambda n: n + gm.suffixes.small_caps + gm.suffixes.modleft,
+        gm.small_caps.keys()
+    )),
+    modright = list(map(
+        lambda n: n + gm.suffixes.small_caps + gm.suffixes.modright,
+        gm.small_caps.keys()
+    )),
 
     boxed = None,
     boxed_default = None,
@@ -207,6 +217,14 @@ generated = Literal(
     )),
     boxed_modcircled = list(map(
         lambda n: n + gm.suffixes.small_caps + gm.suffixes.modcircled + gm.suffixes.boxed,
+        gm.small_caps.keys()
+    )),
+    boxed_modleft = list(map(
+        lambda n: n + gm.suffixes.small_caps + gm.suffixes.modleft + gm.suffixes.boxed,
+        gm.small_caps.keys()
+    )),
+    boxed_modright = list(map(
+        lambda n: n + gm.suffixes.small_caps + gm.suffixes.modright + gm.suffixes.boxed,
         gm.small_caps.keys()
     )),
 )
@@ -256,6 +274,37 @@ for name, codepoint in gm.small_caps.items():
     circled.addReference('modifier_circle')
     circled.width = circle_width
 
+    modifier_lines_width = iso['modifier_lines'].width
+    # create left variant
+    modifier_left_width = iso['modifier_left'].width
+    left = iso.createChar(-1, name + gm.suffixes.small_caps + gm.suffixes.modleft)
+    left.addReference('modifier_left')
+    left.addReference(
+        sc_name,
+        psMat.translate(modifier_left_width - (sc.width / 2), 0)
+    )
+    left.addReference(
+        'modifier_lines',
+        psMat.compose(
+            psMat.scale(sc.width / 2 / modifier_lines_width, 1),
+            psMat.translate(modifier_left_width, 0)
+        )
+    )
+    left.width = modifier_left_width + (sc.width / 2)
+    # create right variant
+    modifier_right_width = iso['modifier_right'].width
+    right = iso.createChar(-1, name + gm.suffixes.small_caps + gm.suffixes.modright)
+    right.addReference(
+        'modifier_right',
+        psMat.translate(sc.width / 2, 0)
+    )
+    right.addReference(sc_name)
+    right.addReference(
+        'modifier_lines',
+        psMat.scale(sc.width / 2 / modifier_lines_width, 1),
+    )
+    right.width = modifier_left_width + (sc.width / 2)
+
     # create inline variant
     create_outlined_variant(iso, sc, 'modifier_lines', gm.suffixes.modinline)
 
@@ -287,6 +336,8 @@ glyphs_that_need_boxing = (
     generated.basic
     + generated.modinline
     + generated.modcircled
+    + generated.modleft
+    + generated.modright
     + gm.modifier_initializers
     + gm.modifier_other
 )
