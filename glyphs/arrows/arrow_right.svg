@@ -8,11 +8,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   viewBox="0 -390 853.73999 2000"
+   viewBox="0 -390 1176.473 2000"
    id="svg4185"
    inkscape:version="0.91 r13725"
    sodipodi:docname="arrow_right.svg"
-   width="853.73999"
+   width="1176.473"
    height="2000">
   <metadata
      id="metadata4195">
@@ -118,7 +118,7 @@
        inkscape:label=""
        inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
-       position="1000,1000.5681"
+       position="1366.3066,716.5"
        orientation="1,0"
        id="guide18230"
        inkscape:label=""
@@ -142,13 +142,18 @@
        orientation="0,1"
        id="guide21669" />
     <sodipodi:guide
-       position="853.7402,777.9785"
+       position="1176.473,716.5"
        orientation="1,0"
        id="guide57260" />
+    <sodipodi:guide
+       position="256.28317,777.9785"
+       orientation="1,0"
+       id="guide57262" />
   </sodipodi:namedview>
   <path
      style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 256.28317,704.9023 853.7402,893.5 l -597.45703,188.5977 0,-127.1192 -256.28317,0 0,-122.957 256.28317,0 0,-127.1192 z"
+     d="M 256.28317,603.02612 1176.473,893.5 l -920.18983,290.4739 0,-228.9954 -256.28317,0 0,-122.957 256.28317,0 z"
      id="rect21662"
-     inkscape:connector-curvature="0" />
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccccc" />
 </svg>
