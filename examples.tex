@@ -4,13 +4,21 @@
     cprotect
 }
 
+\setlength{\parindent}{0mm}
+
 \setmonofont[
     Path = ./build/,
     RawFeature = +calt +liga
 ]{iso1101-font.ttf}
 \begin{document}
-    \texttt{||[(:A:)(:BBBBB:)]||}\\
-    \texttt{o|[\_\_:POSITION:\_\_]>>}\\
-    \texttt{(:A:)}
+{\catcode`\ =12
+\texttt{||[::ANGULARITY::]|[1.23344mm]|[CJ (:A:) (:AX:)ABC]||}\\[0.5cm]
+%
+\texttt{||[(:A:)(:BBBBB:)]||}\\[0.5cm]
+%
+\texttt{o|[::POSITION::]>>}\\[0.5cm]
+%
+\texttt{(:A:)}\\[0.5cm]
+}
 \end{document}
 

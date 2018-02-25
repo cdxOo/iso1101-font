@@ -97,20 +97,20 @@ gm = Literal(
     ],
     symbols = {
         'angularity':       'uni2220', # angle 
-        'circular_runout':  'uni2197', # north east arrow
+        'circularrunout':   'uni2197', # north east arrow
         'circularity':      'uni25cb', # circularity
         'concentricity':    'uni25ce', # bullseye
         'diameter':         'uni2300', # diameter
         # FIXME we might want to enlarge the flattness svg again and fiddle around with left(right bearing
         'flatness':         'uni23e5', # flatness
-        'line_profile':     'uni2312', # arc
+        'lineprofile':      'uni2312', # arc
         'parallelism':      'uni2afd', # double solidous operator
         'perpendicularity': 'uni27c2', # perpendicularity
         'position':         'uni2316', # position
         'straightness':     'uni23e4', # straightness
-        'surface_profile':  'uni2313', # segment
+        'surfaceprofile':   'uni2313', # segment
         'symmetry':         'uni232f', # symmetry
-        'total_runout':     'uni21D7', # north east double arrow
+        'totalrunout':      'uni21D7', # north east double arrow
         'cylindricity':     'uni232d', # cylindricity
     },
 
