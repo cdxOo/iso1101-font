@@ -1,24 +1,41 @@
 \documentclass[12pt, a4paper]{scrreprt}
 \RequirePackage{
     fontspec,
-    cprotect
+    cprotect,
+    blindtext
 }
 
 \setlength{\parindent}{0mm}
 
+%\newfontfamily\isofontfamily[
+%    Path = ./build/,
+%    RawFeature = +calt +liga
+%]{iso1101-font.ttf}%
+%\newcommand{\isofont}[1]{\isofontfamily #1}
+
 \setmonofont[
     Path = ./build/,
     RawFeature = +calt +liga
-]{iso1101-font.ttf}
+]{iso1101-font.ttf}%
+
+\def\isofont#1{% FIXME
+    {\texttt{\scantokens{\catcode`\ =12\relax#1}}}}
+
 \begin{document}
-{\catcode`\ =12
-\texttt{||[::ANGULARITY::]|[1.23344mm]|[CJ (:A:) (:AX:)ABC]||}\\[0.5cm]
+% FIXME: somehow this dros the boxed variants of symbol legatires
+%        while setmonofont doesnt; its not related to teh colons as ai first thought
+%{\fontspec[Path = ./build/, RawFeature = +calt +liga]{iso1101-font.ttf}{||[::POSITION::]||}\\[5mm]}
 %
-\texttt{||[(:A:)(:BBBBB:)]||}\\[0.5cm]
+
+
+\isofont{||[::ANGULARITY::]|[(:A:) (:B:)]|[::ANGULARITY::]||}
+
+\isofont{||[::POSITION::]|[1,23mm]|[ACL (:A:) (:BBBBB:)]||}\\[0.5cm]
 %
-\texttt{o|[::POSITION::]>>}\\[0.5cm]
+\isofont{o|[::POSITION::]>>}\\[0.5cm]
 %
-\texttt{(:A:)}\\[0.5cm]
-}
+\isofont{(:A:)}\\[0.5cm]
+
+\blindtext[2]
 \end{document}
 
