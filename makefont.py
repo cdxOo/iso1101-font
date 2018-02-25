@@ -122,7 +122,7 @@ gm = Literal(
         'C': 'uni1D04',
         'D': 'uni1D05',
         'E': 'uni1D07',
-        'F': 'uniA730',
+        'F': None, # uniA730 but missing in lato
         'G': 'uni0262',
         'H': 'uni029C',
         'I': 'uni026A',
@@ -135,7 +135,7 @@ gm = Literal(
         'P': 'uni1D18',
         'Q': None, # missing from unicode
         'R': 'uni0280',
-        'S': 'uniA731',
+        'S': None, # uniA731 but missing in lato
         'T': 'uni1D1B',
         'U': 'uni1D1C',
         'V': 'uni1D20',
