@@ -71,6 +71,9 @@
     {% for glyph in moddable_glyphs %}
         \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modright }}
     {% endfor %}
+    {% for glyph in arrows %}
+        \{{ glyph }}
+    {% endfor %}
 ];
 
 @boxed_glyph = [
@@ -91,6 +94,9 @@
     {% endfor %}
     {% for glyph in moddable_glyphs %}
         \{{ glyph }}{{ suffixes.small_caps }}{{ suffixes.modright }}{{ suffixes.boxed }}
+    {% endfor %}
+    {% for glyph in arrows %}
+        \{{ glyph }}{{ suffixes.boxed }}
     {% endfor %}
 ];
 

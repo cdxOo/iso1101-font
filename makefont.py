@@ -172,6 +172,12 @@ gm = Literal(
         'roof_box_right',
     ],
 
+    arrows = [
+        'arrow_left',
+        'arrow_right',
+        'arrow_mid_none',
+    ],
+
     suffixes = Literal(
         small_caps = '.sc',
         modcircled = '.modcircled',
@@ -325,6 +331,10 @@ arrow_segments = [
     'end'
 ]
 
+for name in gm.arrows:
+    import_glyph_from_svg(iso, 'glyphs/arrows/', name)
+
+
 # import box outline glyphs from svg
 box_outlines = ( gm.box_initializers + gm.box_separators + gm.box_other )
 for name in box_outlines:
@@ -340,6 +350,7 @@ glyphs_that_need_boxing = (
     + generated.modright
     + gm.modifier_initializers
     + gm.modifier_other
+    + gm.arrows
 )
 for name in glyphs_that_need_boxing:
     glyph = iso[name]
@@ -381,6 +392,7 @@ jinja_context = Literal(
 
     moddable_glyphs = gm.small_caps.keys(),
     symbols = gm.symbols.keys(),
+    arrows = gm.arrows,
 
     suffixes = gm.suffixes,
 )

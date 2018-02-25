@@ -17,15 +17,23 @@ lookup ModifierContextual {
         
 } ModifierContextual;
 
+lookup ArrowContextual {
+    lookupflag 0;
+        sub \arrow_left \colon' by \arrow_mid_none;
+        sub \arrow_left.boxed \colon.boxed' by \arrow_mid_none.boxed;
+} ArrowContextual;
+
 feature calt {
     script DFLT;
         language dflt;
             lookup BoxContextual;
             lookup ModifierContextual;
+            lookup ArrowContextual;
     script latn;
         language dflt;
             lookup BoxContextual;
             lookup ModifierContextual;
+            lookup ArrowContextual;
 } calt;
 
 

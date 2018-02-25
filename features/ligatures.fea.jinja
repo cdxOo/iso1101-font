@@ -16,6 +16,12 @@ lookup BoxingLigatures {
 
 } BoxingLigatures;
 
+lookup ArrowLigatures {
+    lookupflag 0;
+    sub \less \colon by \arrow_left;
+    sub \colon \greater by \arrow_right;
+} ArrowLigatures;
+
 lookup SymbolLigatures {
     lookupflag 0;
     {% for name in symbols %}
@@ -62,6 +68,7 @@ feature liga {
             lookup ModCircledLigatures;
             lookup ModLeftLigatures;
             lookup ModRightLigatures;
+            lookup ArrowLigatures;
     script latn;
         language dflt;
             lookup BoxingLigatures;
@@ -69,6 +76,7 @@ feature liga {
             lookup ModCircledLigatures;
             lookup ModLeftLigatures;
             lookup ModRightLigatures;
+            lookup ArrowLigatures;
 } liga;
 
 
